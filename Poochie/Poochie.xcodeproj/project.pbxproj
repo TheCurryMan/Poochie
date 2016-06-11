@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36572B4C1D0CC79900B8B134 /* imgres.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 36572B4B1D0CC79900B8B134 /* imgres.jpg */; };
 		76A7B5D715A0AC78C7DB9EE4 /* Pods_PoochieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05FA8306FF783440335D5074 /* Pods_PoochieTests.framework */; };
 		96F3618E26A4138EBA12B96F /* Pods_Poochie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76E2CE0535382BE6DCA0AC86 /* Pods_Poochie.framework */; };
 		E16C14981D0CBEC4009444FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16C14971D0CBEC4009444FA /* AppDelegate.swift */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		05FA8306FF783440335D5074 /* Pods_PoochieTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoochieTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C3B9B80AB9BB36641BD5481 /* Pods-Poochie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Poochie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Poochie/Pods-Poochie.debug.xcconfig"; sourceTree = "<group>"; };
+		36572B4B1D0CC79900B8B134 /* imgres.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = imgres.jpg; path = Images/imgres.jpg; sourceTree = "<group>"; };
 		76E2CE0535382BE6DCA0AC86 /* Pods_Poochie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Poochie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		895DDF6F11E489749A38613C /* Pods-PoochieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoochieTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PoochieTests/Pods-PoochieTests.debug.xcconfig"; sourceTree = "<group>"; };
 		997C6E040DD77A0AB0982C85 /* Pods_PoochieUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoochieUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +133,7 @@
 				E16C14991D0CBEC4009444FA /* ViewController.swift */,
 				E16C149B1D0CBEC4009444FA /* Main.storyboard */,
 				E16C149E1D0CBEC4009444FA /* Assets.xcassets */,
+				36572B4B1D0CC79900B8B134 /* imgres.jpg */,
 				E16C14A01D0CBEC4009444FA /* LaunchScreen.storyboard */,
 				E16C14A31D0CBEC4009444FA /* Info.plist */,
 			);
@@ -277,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36572B4C1D0CC79900B8B134 /* imgres.jpg in Resources */,
 				E16C14A21D0CBEC4009444FA /* LaunchScreen.storyboard in Resources */,
 				E16C149F1D0CBEC4009444FA /* Assets.xcassets in Resources */,
 				E16C149D1D0CBEC4009444FA /* Main.storyboard in Resources */,
