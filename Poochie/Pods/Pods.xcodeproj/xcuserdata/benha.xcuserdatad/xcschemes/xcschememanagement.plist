@@ -8,19 +8,41 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>0</integer>
 		</dict>
 		<key>Pods-PoochieTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 		<key>Pods-PoochieUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>4C418CD631FDB4247F82BF001200ACA7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9FC9F3ECEEB0BB7BB8842F1FBF1A14F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C7B876FBDF900A0E30D48EB0A0458FBF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>
