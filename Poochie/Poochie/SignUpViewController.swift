@@ -6,30 +6,82 @@
 //  Copyright © 2016 Avinash Jain. All rights reserved.
 //
 
+//
+//  SignUpViewController.swift
+//  Lyne
+//
+//  Created by Avinash Jain on 6/6/16.
+//  Copyright © 2016 Avinash Jain. All rights reserved.
+//
+
 import UIKit
+import FirebaseAuth
+import Firebase
 
 class SignUpViewController: UIViewController {
-
+    
+    @IBOutlet var username: UITextField!
+    
+    @IBOutlet var email: UITextField!
+    
+    @IBOutlet var password: UITextField!
+    
+    var ref: FIRDatabaseReference!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        ref = FIRDatabase.database().reference()
         // Do any additional setup after loading the view.
     }
-
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        if let user = FIRAuth.auth()?.currentUser {
+            print("User signed in")
+            self.performSegueWithIdentifier("home", sender: self)
+            // User is signed in.
+        } else {
+            // No user is signed in.
+            print("Please sign in!")
+        }
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func signup(sender: AnyObject) {
+        if let em = email.text, pass = password.text{
+            FIRAuth.auth()?.createUserWithEmail(email.text!, password: password.text!) {(user, error) in
+                if let error = error {
+                    print(error.localizedDescription)
+                }
+                else {
+                    print("User signed in!")
+                    
+                    self.ref.child("data/users").updateChildValues(["\(FIRAuth.auth()!.currentUser!.uid)":["Username":self.username.text!]])
+                    
+                    self.performSegueWithIdentifier("home", sender: self)
+                }
+            } }
+        else{
+            print("You left email/password empty")
+        }
     }
-    */
-
+    
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
