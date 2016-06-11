@@ -17,9 +17,6 @@
 		E16C14A21D0CBEC4009444FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E16C14A01D0CBEC4009444FA /* LaunchScreen.storyboard */; };
 		E16C14AD1D0CBEC4009444FA /* PoochieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16C14AC1D0CBEC4009444FA /* PoochieTests.swift */; };
 		E16C14B81D0CBEC4009444FA /* PoochieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16C14B71D0CBEC4009444FA /* PoochieUITests.swift */; };
-		E1A4FB231D0CC8190095A82E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A4FB221D0CC8190095A82E /* SignUpViewController.swift */; };
-		E1A4FB251D0CC82C0095A82E /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A4FB241D0CC82C0095A82E /* LogInViewController.swift */; };
-		E1A4FB271D0CC9A90095A82E /* SignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1A4FB261D0CC9A90095A82E /* SignUpView.xib */; };
 		E2F234A666876E6F04B6FB07 /* Pods_PoochieUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 997C6E040DD77A0AB0982C85 /* Pods_PoochieUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,9 +60,6 @@
 		E16C14B31D0CBEC4009444FA /* PoochieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoochieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E16C14B71D0CBEC4009444FA /* PoochieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoochieUITests.swift; sourceTree = "<group>"; };
 		E16C14B91D0CBEC4009444FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E1A4FB221D0CC8190095A82E /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		E1A4FB241D0CC82C0095A82E /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
-		E1A4FB261D0CC9A90095A82E /* SignUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpView.xib; sourceTree = "<group>"; };
 		EE0C2DAB7771D4649AE1A94B /* Pods-PoochieTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoochieTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PoochieTests/Pods-PoochieTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,9 +129,6 @@
 		E16C14961D0CBEC4009444FA /* Poochie */ = {
 			isa = PBXGroup;
 			children = (
-				E1A4FB221D0CC8190095A82E /* SignUpViewController.swift */,
-				E1A4FB261D0CC9A90095A82E /* SignUpView.xib */,
-				E1A4FB241D0CC82C0095A82E /* LogInViewController.swift */,
 				E16C14971D0CBEC4009444FA /* AppDelegate.swift */,
 				E16C14991D0CBEC4009444FA /* ViewController.swift */,
 				E16C149B1D0CBEC4009444FA /* Main.storyboard */,
@@ -289,11 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< Updated upstream
 				36572B4C1D0CC79900B8B134 /* imgres.jpg in Resources */,
-=======
-				E1A4FB271D0CC9A90095A82E /* SignUpView.xib in Resources */,
->>>>>>> Stashed changes
 				E16C14A21D0CBEC4009444FA /* LaunchScreen.storyboard in Resources */,
 				E16C149F1D0CBEC4009444FA /* Assets.xcassets in Resources */,
 				E16C149D1D0CBEC4009444FA /* Main.storyboard in Resources */,
@@ -444,8 +431,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1A4FB251D0CC82C0095A82E /* LogInViewController.swift in Sources */,
-				E1A4FB231D0CC8190095A82E /* SignUpViewController.swift in Sources */,
 				E16C149A1D0CBEC4009444FA /* ViewController.swift in Sources */,
 				E16C14981D0CBEC4009444FA /* AppDelegate.swift in Sources */,
 			);

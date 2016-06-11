@@ -1,6 +1,0 @@
-framework module Pods_Poochie {
-  umbrella header "Pods-Poochie-umbrella.h"
-
-  export *
-  module * { export * }
-}
