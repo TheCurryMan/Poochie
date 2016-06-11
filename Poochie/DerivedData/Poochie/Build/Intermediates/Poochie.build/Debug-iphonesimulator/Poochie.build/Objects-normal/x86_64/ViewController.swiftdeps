@@ -6,13 +6,13 @@ provides-nominal:
 provides-member:
 - ["C7Poochie14ViewController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
 - "viewDidLoad"
+- "didReceiveMemoryWarning"
 depends-top-level:
-- !private "StringLiteralType"
-- !private "print"
-- "ViewController"
 - "UIViewController"
+- "ViewController"
+- !private "print"
+- !private "StringLiteralType"
 depends-member:
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - ["Ps9AnyObject", "init"]
