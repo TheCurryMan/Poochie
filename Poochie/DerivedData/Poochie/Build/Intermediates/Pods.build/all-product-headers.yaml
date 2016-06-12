@@ -4,28 +4,28 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/Avinash/Downloads/Poochie-9218d6f6ec32c6fad956ce7b3976216f046f487c/Poochie/DerivedData/Poochie/Build/Products/Debug-iphonesimulator/Pods_Poochie.framework/Headers",
+      'name': "/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Products/Debug-iphonesimulator/Pods_Poochie.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "Pods-Poochie-umbrella.h",
-          'external-contents': "/Users/Avinash/Downloads/Poochie-9218d6f6ec32c6fad956ce7b3976216f046f487c/Poochie/Pods/Target Support Files/Pods-Poochie/Pods-Poochie-umbrella.h"
+          'external-contents': "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/Target Support Files/Pods-Poochie/Pods-Poochie-umbrella.h"
         },
         {
           'type': 'file',
           'name': "Pods_Poochie-Swift.h",
-          'external-contents': "/Users/Avinash/Downloads/Poochie-9218d6f6ec32c6fad956ce7b3976216f046f487c/Poochie/DerivedData/Poochie/Build/Products/Debug-iphonesimulator/Pods_Poochie.framework/Headers/Pods_Poochie-Swift.h"
+          'external-contents': "/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Products/Debug-iphonesimulator/Pods_Poochie.framework/Headers/Pods_Poochie-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/Avinash/Downloads/Poochie-9218d6f6ec32c6fad956ce7b3976216f046f487c/Poochie/DerivedData/Poochie/Build/Products/Debug-iphonesimulator/Pods_Poochie.framework/Modules",
+      'name': "/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Products/Debug-iphonesimulator/Pods_Poochie.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/Avinash/Downloads/Poochie-9218d6f6ec32c6fad956ce7b3976216f046f487c/Poochie/DerivedData/Poochie/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Poochie.build/module.modulemap"
+          'external-contents': "/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Poochie.build/module.modulemap"
         }
       ]
     }
