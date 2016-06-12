@@ -114,9 +114,21 @@ SWIFT_CLASS("_TtC7Poochie11AppDelegate")
 @end
 
 @class UITextField;
-@class FIRDatabaseReference;
 @class NSBundle;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC7Poochie19LoginViewController")
+@interface LoginViewController : UIViewController
+@property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified email;
+@property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified password;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (IBAction)login:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class FIRDatabaseReference;
 
 SWIFT_CLASS("_TtC7Poochie20SignUpViewController")
 @interface SignUpViewController : UIViewController

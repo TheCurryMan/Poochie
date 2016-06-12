@@ -7,23 +7,25 @@ provides-member:
 - ["C7Poochie11AppDelegate", ""]
 provides-dynamic-lookup:
 - "applicationWillTerminate"
+- "applicationDidEnterBackground"
 - "application"
-- "applicationWillResignActive"
 - "applicationDidBecomeActive"
 - "applicationWillEnterForeground"
 - "window"
-- "applicationDidEnterBackground"
+- "applicationWillResignActive"
 depends-top-level:
-- "Bool"
-- "UIApplication"
-- "NSObject"
-- "UIResponder"
-- "AnyObject"
-- !private "BooleanLiteralType"
 - "AppDelegate"
 - "UIWindow"
+- "AnyObject"
+- !private "FIRApp"
+- "NSObject"
 - "UIApplicationDelegate"
+- "Bool"
+- "UIApplication"
+- !private "BooleanLiteralType"
+- "UIResponder"
 depends-member:
+- !private ["Ps9AnyObject", "FIRApp"]
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]
 - ["Ps9AnyObject", "applicationDidEnterBackground"]
@@ -36,11 +38,13 @@ depends-member:
 - ["Ps9AnyObject", "applicationWillEnterForeground"]
 - ["Ps9AnyObject", "applicationWillResignActive"]
 - ["Ps9AnyObject", "applicationWillTerminate"]
+- !private ["Ps9AnyObject", "configure"]
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "window"]
 - ["Ps9AnyObject", ""]
 - ["C7Poochie11AppDelegate", "AnyObject"]
 - ["C7Poochie11AppDelegate", "Bool"]
+- !private ["C7Poochie11AppDelegate", "FIRApp"]
 - ["C7Poochie11AppDelegate", "NSObject"]
 - ["C7Poochie11AppDelegate", "UIApplication"]
 - ["C7Poochie11AppDelegate", "UIWindow"]
@@ -59,6 +63,7 @@ depends-member:
 - ["C7Poochie11AppDelegate", "deinit"]
 - ["C7Poochie11AppDelegate", "init"]
 - ["C7Poochie11AppDelegate", "window"]
+- !private ["Ps11CVarArgType", "FIRApp"]
 - ["Ps11CVarArgType", "application"]
 - ["Ps11CVarArgType", "applicationDidBecomeActive"]
 - ["Ps11CVarArgType", "applicationDidEnterBackground"]
@@ -71,9 +76,11 @@ depends-member:
 - ["Ps11CVarArgType", "applicationWillEnterForeground"]
 - ["Ps11CVarArgType", "applicationWillResignActive"]
 - ["Ps11CVarArgType", "applicationWillTerminate"]
+- !private ["Ps11CVarArgType", "configure"]
 - ["Ps11CVarArgType", "init"]
 - ["Ps11CVarArgType", "window"]
 - ["Ps11CVarArgType", ""]
+- !private ["Ps28CustomDebugStringConvertible", "FIRApp"]
 - ["Ps28CustomDebugStringConvertible", "application"]
 - ["Ps28CustomDebugStringConvertible", "applicationDidBecomeActive"]
 - ["Ps28CustomDebugStringConvertible", "applicationDidEnterBackground"]
@@ -86,9 +93,11 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "applicationWillEnterForeground"]
 - ["Ps28CustomDebugStringConvertible", "applicationWillResignActive"]
 - ["Ps28CustomDebugStringConvertible", "applicationWillTerminate"]
+- !private ["Ps28CustomDebugStringConvertible", "configure"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "window"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "FIRApp"]
 - ["Ps23CustomStringConvertible", "application"]
 - ["Ps23CustomStringConvertible", "applicationDidBecomeActive"]
 - ["Ps23CustomStringConvertible", "applicationDidEnterBackground"]
@@ -101,9 +110,11 @@ depends-member:
 - ["Ps23CustomStringConvertible", "applicationWillEnterForeground"]
 - ["Ps23CustomStringConvertible", "applicationWillResignActive"]
 - ["Ps23CustomStringConvertible", "applicationWillTerminate"]
+- !private ["Ps23CustomStringConvertible", "configure"]
 - ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "window"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "FIRApp"]
 - ["Ps9Equatable", "application"]
 - ["Ps9Equatable", "applicationDidBecomeActive"]
 - ["Ps9Equatable", "applicationDidEnterBackground"]
@@ -116,9 +127,12 @@ depends-member:
 - ["Ps9Equatable", "applicationWillEnterForeground"]
 - ["Ps9Equatable", "applicationWillResignActive"]
 - ["Ps9Equatable", "applicationWillTerminate"]
+- !private ["Ps9Equatable", "configure"]
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "window"]
 - ["Ps9Equatable", ""]
+- !private ["CSo6FIRApp", "configure"]
+- !private ["Ps8Hashable", "FIRApp"]
 - ["Ps8Hashable", "application"]
 - ["Ps8Hashable", "applicationDidBecomeActive"]
 - ["Ps8Hashable", "applicationDidEnterBackground"]
@@ -131,11 +145,13 @@ depends-member:
 - ["Ps8Hashable", "applicationWillEnterForeground"]
 - ["Ps8Hashable", "applicationWillResignActive"]
 - ["Ps8Hashable", "applicationWillTerminate"]
+- !private ["Ps8Hashable", "configure"]
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "window"]
 - ["Ps8Hashable", ""]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "FIRApp"]
 - ["CSo8NSObject", "NSObject"]
 - ["CSo8NSObject", "UIApplication"]
 - ["CSo8NSObject", "UIWindow"]
@@ -151,8 +167,10 @@ depends-member:
 - ["CSo8NSObject", "applicationWillEnterForeground"]
 - ["CSo8NSObject", "applicationWillResignActive"]
 - ["CSo8NSObject", "applicationWillTerminate"]
+- !private ["CSo8NSObject", "configure"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "window"]
+- !private ["PSo16NSObjectProtocol", "FIRApp"]
 - ["PSo16NSObjectProtocol", "application"]
 - ["PSo16NSObjectProtocol", "applicationDidBecomeActive"]
 - ["PSo16NSObjectProtocol", "applicationDidEnterBackground"]
@@ -165,9 +183,11 @@ depends-member:
 - ["PSo16NSObjectProtocol", "applicationWillEnterForeground"]
 - ["PSo16NSObjectProtocol", "applicationWillResignActive"]
 - ["PSo16NSObjectProtocol", "applicationWillTerminate"]
+- !private ["PSo16NSObjectProtocol", "configure"]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo21UIApplicationDelegate", "FIRApp"]
 - ["PSo21UIApplicationDelegate", "application"]
 - ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
 - ["PSo21UIApplicationDelegate", "applicationDidEnterBackground"]
@@ -184,6 +204,7 @@ depends-member:
 - ["PSo21UIApplicationDelegate", ""]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "FIRApp"]
 - ["CSo11UIResponder", "NSObject"]
 - ["CSo11UIResponder", "UIApplication"]
 - ["CSo11UIResponder", "UIWindow"]
@@ -209,6 +230,7 @@ depends-nominal:
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
+- !private "CSo6FIRApp"
 - "Ps8Hashable"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
@@ -262,4 +284,4 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/Firebase/Headers/Firebase.h"
-interface-hash: "eb6deb7e97b205db2b1f8c4c6c87743c"
+interface-hash: "ea95070f95b9c19da8fa433e7bcccaf6"
