@@ -96,6 +96,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 @import ObjectiveC;
 @import EPDeckView;
 @import CoreGraphics;
+@import MessageUI;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -159,6 +160,7 @@ SWIFT_CLASS("_TtC7Poochie20SignUpViewController")
 @end
 
 @class UILabel;
+@class UIActivityIndicatorView;
 @class UIView;
 @class UIImageView;
 @class UIButton;
@@ -172,6 +174,7 @@ SWIFT_CLASS("_TtC7Poochie8TestView")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified checkButton;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified Location;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified Price;
+@property (nonatomic, strong) IBOutlet UIActivityIndicatorView * _Null_unspecified activityController;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)xibSetup;
@@ -181,17 +184,15 @@ SWIFT_CLASS("_TtC7Poochie8TestView")
 @class EPDeckView;
 
 SWIFT_CLASS("_TtC7Poochie20TinderViewController")
-@interface TinderViewController : UIViewController <EPDeckViewDataSource, EPDeckViewDelegate>
+@interface TinderViewController : UIViewController <EPDeckViewDataSource, EPDeckViewDelegate, MFMailComposeViewControllerDelegate>
 @property (nonatomic, weak) IBOutlet EPDeckView * _Null_unspecified deckView;
 @property (nonatomic) NSInteger numberOfCards;
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView * _Null_unspecified activityIndicator;
 @property (nonatomic, copy) NSArray<NSArray<NSString *> *> * _Nonnull finalData;
+@property (nonatomic, copy) NSString * _Nonnull chosenCode;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
-- (IBAction)reloadCardsButtonTapped:(id _Nonnull)sender;
-- (IBAction)throwRightButtonTapped:(id _Nonnull)sender;
-- (IBAction)throwLeftButtonTapped:(id _Nonnull)sender;
-- (IBAction)previousCardButtonTapped:(id _Nonnull)sender;
 - (NSInteger)numberOfCardsInDeckView:(EPDeckView * _Nonnull)deckView;
 - (EPCardView * _Nonnull)deckView:(EPDeckView * _Nonnull)deckView cardViewAtIndex:(NSInteger)index;
 - (UIButton * _Nullable)deckView:(EPDeckView * _Nonnull)deckView rightButtonForCardAtIndex:(NSInteger)index;
@@ -199,7 +200,6 @@ SWIFT_CLASS("_TtC7Poochie20TinderViewController")
 - (void)deckView:(EPDeckView * _Nonnull)deckView cardAtIndex:(NSInteger)index movedToDirection:(enum CardViewDirection)direction;
 - (void)deckView:(EPDeckView * _Nonnull)deckView didTapLeftButtonAtIndex:(NSInteger)index;
 - (void)deckView:(EPDeckView * _Nonnull)deckView didTapRightButtonAtIndex:(NSInteger)index;
-- (void)loadCards;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

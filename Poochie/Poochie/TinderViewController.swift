@@ -3,10 +3,11 @@
 //  EPDeckView
 //
 
-
+import Font_Awesome_Swift
 import UIKit
 import EPDeckView
 import MessageUI
+import BTNavigationDropdownMenu
 class TinderViewController: UIViewController, EPDeckViewDataSource, EPDeckViewDelegate, MFMailComposeViewControllerDelegate {
     
     private var cardViews: [EPCardView] = []
@@ -16,20 +17,38 @@ class TinderViewController: UIViewController, EPDeckViewDataSource, EPDeckViewDe
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
      var finalData = [[""]]
     
-
+    var chosenCode = "sss"
     
     //  MARK: - INITIALIZATION
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        let dataCodes = ["sss","ata","ppa","ara","pta","baa","bar","haa","bia","boo","bka","bfa","cta","ema","moa","cla","cba","sya","ela","gra","fua","gms","foa","hsa","wan","jwa","maa","mca","msa","pha","rva","sga","tia","tla","taa","vga"]
+ 
+        let items = ["All for Sale", "Antiques", "Applicances", "Arts+Crafts", "Auto Parts", "Baby+Kids", "Barter", "Beauty+Health", "Bikes", "Boats", "Books", "Business", "Cars+Trucks", "CD/DVD/VHS", "Cell Phones", "Clothing+Accessories", "Collectibles", "Computers", "Electronics", "Farm+Garden", "Furniture", "Garage Sales", "General For Sale", "Household", "Items Wanted", "Jewelry", "Materials", "Motorcycles", "Musical Instruments", "Photo+Video", "Recreational Vehicles", "Sporting Goods", "Tickets", "Tools", "Toys+Games", "Video Gaming"]
+ 
+        let menuView = BTNavigationDropdownMenu(navigationController: self.navigationController, title: items.first!, items: items)
+        menuView.menuTitleColor = UIColor(red: 190/255, green: 144/255, blue: 212/255, alpha: 1)
+        menuView.cellTextLabelColor = UIColor.whiteColor()
+        menuView.cellBackgroundColor = UIColor(red: 190/255, green: 144/255, blue: 212/255, alpha: 1)
+        
+        self.navigationItem.titleView = menuView
+        
+        menuView.didSelectItemAtIndexHandler = {(indexPath: Int) -> () in
+            print("Did select item at index: \(indexPath)")
+            self.chosenCode = dataCodes[indexPath]
+            self.finalData = [[""]]
+            self.viewDidLoad()
+        }
+        
+        self.navigationItem.setHidesBackButton(true, animated: false)        
         print("START ANIMATING")
-        self.activityIndicator.hidesWhenStopped = true;
-        self.activityIndicator.activityIndicatorViewStyle  = UIActivityIndicatorViewStyle.Gray;
-        self.activityIndicator.startAnimating()
+       
         
         
-        self.navigationController?.navigationBar.barTintColor = UIColor(red: 190/255, green: 144/255, blue: 212/255, alpha: 1)
-        var url = NSURL(string: "https://quiet-lowlands-84063.herokuapp.com/?url=sss")
+        self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
+        var url = NSURL(string: "https://quiet-lowlands-84063.herokuapp.com/?url=\(chosenCode)")
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!, completionHandler: { (data, response, error) -> Void in
             
             
@@ -86,7 +105,7 @@ class TinderViewController: UIViewController, EPDeckViewDataSource, EPDeckViewDe
         
         task.resume()
         
-        
+        print("Namaste")
         
 
         
@@ -176,11 +195,13 @@ class TinderViewController: UIViewController, EPDeckViewDataSource, EPDeckViewDe
     
     //  MARK: - EPDECKVIEW DATASOURCE & DELEGATE
     func numberOfCardsInDeckView(deckView: EPDeckView) -> Int {
-        return numberOfCards
+        return 20
     }
     
     func deckView(deckView: EPDeckView, cardViewAtIndex index: Int) -> EPCardView {
         //  Create a TestView to be added as a card in the deck.
+        
+        
         
         let testView: TestView = TestView(frame: CGRectMake(20,64,280,504))
         testView.center = self.deckView.center
@@ -189,8 +210,12 @@ class TinderViewController: UIViewController, EPDeckViewDataSource, EPDeckViewDe
         testView.layer.shadowRadius = 25;
         testView.layer.shadowOpacity = 0.7;
         
-        if finalData.count > 5 && finalData[index].count == 5{
-            print(finalData)
+        if finalData.count > 1 && finalData[index].count == 5{
+            testView.activityController.stopAnimating()
+            testView.activityController.hidden = true
+            print("INDEX = " + String(index))
+            
+            
             var data = finalData[index]
             print(data)
             var url = data[0]
@@ -214,9 +239,32 @@ class TinderViewController: UIViewController, EPDeckViewDataSource, EPDeckViewDe
             print(photoURL)
             
             testView.profileImageView.image = UIImage(data: NSData(contentsOfURL: NSURL(string: "\(photoURL)")!)!)
+            
+            self.cardViews.append(testView)
+        }
+        
+        
+        
+        else if finalData.count < 2 {
+            print("LESS THAN TWO BEING ADDED")
+            self.cardViews.append(testView)
+            if testView.activityController.isAnimating() == false {
+            testView.activityController.tintColor = UIColor.whiteColor()
+                testView.activityController.hidesWhenStopped = true
+                testView.activityController.startAnimating() }
+        }
+        
+        else {
+            
+                testView.displayNameLabel.text = "Bug in Parsing! Swipe left"
+                testView.Location.text = ""
+                testView.Price.text = ""
+                testView.activityController.hidden = true
+                print("finished")
+            
         }
         //  Keep a reference so you can pass the nib's buttons to the delegate functions.
-        self.cardViews.append(testView)
+        
         
         return testView
     }

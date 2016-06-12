@@ -1,0 +1,10 @@
+framework module BTNavigationDropdownMenu {
+  umbrella header "BTNavigationDropdownMenu-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module BTNavigationDropdownMenu.Swift {
+    header "BTNavigationDropdownMenu-Swift.h"
+}

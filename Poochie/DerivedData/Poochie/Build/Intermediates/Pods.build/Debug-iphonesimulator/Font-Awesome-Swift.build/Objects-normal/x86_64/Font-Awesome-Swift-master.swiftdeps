@@ -1,0 +1,5 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
+options: "fa30509d5263828dd51fe4dc950ba495"
+build_time: [519048475, 744668000]
+inputs:
+  "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/Font-Awesome-Swift/Source/FAIcon.swift": [519048468, 0]

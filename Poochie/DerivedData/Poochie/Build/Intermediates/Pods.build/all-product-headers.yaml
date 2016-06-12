@@ -4,6 +4,33 @@
   'roots': [
     {
       'type': 'directory',
+      'name': "/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Products/Debug-iphonesimulator/BTNavigationDropdownMenu/BTNavigationDropdownMenu.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "BTNavigationDropdownMenu-Swift.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Products/Debug-iphonesimulator/BTNavigationDropdownMenu/BTNavigationDropdownMenu.framework/Headers/BTNavigationDropdownMenu-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "BTNavigationDropdownMenu-umbrella.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/Target Support Files/BTNavigationDropdownMenu/BTNavigationDropdownMenu-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Products/Debug-iphonesimulator/BTNavigationDropdownMenu/BTNavigationDropdownMenu.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Intermediates/Pods.build/Debug-iphonesimulator/BTNavigationDropdownMenu.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
       'name': "/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Products/Debug-iphonesimulator/EPDeckView/EPDeckView.framework/Headers",
       'contents': [
         {
@@ -26,6 +53,33 @@
           'type': 'file',
           'name': "module.modulemap",
           'external-contents': "/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Intermediates/Pods.build/Debug-iphonesimulator/EPDeckView.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Products/Debug-iphonesimulator/Font-Awesome-Swift/Font_Awesome_Swift.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Font-Awesome-Swift-umbrella.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/Target Support Files/Font-Awesome-Swift/Font-Awesome-Swift-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Font_Awesome_Swift-Swift.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Products/Debug-iphonesimulator/Font-Awesome-Swift/Font_Awesome_Swift.framework/Headers/Font_Awesome_Swift-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Products/Debug-iphonesimulator/Font-Awesome-Swift/Font_Awesome_Swift.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Intermediates/Pods.build/Debug-iphonesimulator/Font-Awesome-Swift.build/module.modulemap"
         }
       ]
     },

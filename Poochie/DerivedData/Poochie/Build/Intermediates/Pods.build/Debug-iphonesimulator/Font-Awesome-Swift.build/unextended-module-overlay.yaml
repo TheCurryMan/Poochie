@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Products/Debug-iphonesimulator/Font-Awesome-Swift/Font_Awesome_Swift.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Intermediates/Pods.build/Debug-iphonesimulator/Font-Awesome-Swift.build/unextended-module.modulemap',
+    }]
+  }]
+}

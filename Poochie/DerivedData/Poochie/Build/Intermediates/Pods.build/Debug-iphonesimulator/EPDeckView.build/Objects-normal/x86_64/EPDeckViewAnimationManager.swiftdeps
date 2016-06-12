@@ -7,20 +7,20 @@ provides-member:
 - ["C10EPDeckView26EPDeckViewAnimationManager", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "-"
+- "Int"
+- "NSTimeInterval"
+- "CGPointZero"
+- !private "*"
+- !private "/"
+- !private "+"
 - "EPDeckViewAnchor"
-- "CGRect"
+- "CGFloat"
+- "CGPoint"
 - "UIView"
 - !private "CGPointMake"
 - "EPDeckViewAnimationManager"
-- !private "*"
-- "Int"
-- !private "+"
-- "NSTimeInterval"
-- !private "-"
-- "CGPointZero"
-- "CGPoint"
-- !private "/"
-- "CGFloat"
+- "CGRect"
 depends-member:
 - !private ["Ps9AnyObject", "CGPointMake"]
 - ["Ps9AnyObject", "CGPointZero"]

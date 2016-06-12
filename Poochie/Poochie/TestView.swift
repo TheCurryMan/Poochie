@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import EPDeckView
+import Font_Awesome_Swift
 
 class TestView: EPCardView {
     
@@ -19,6 +20,7 @@ class TestView: EPCardView {
     @IBOutlet weak var checkButton: UIButton!
     @IBOutlet var Location: UILabel!
     @IBOutlet var Price: UILabel!
+    @IBOutlet var activityController: UIActivityIndicatorView!
 
     // MARK: INITIALIZATION
     
@@ -38,6 +40,7 @@ class TestView: EPCardView {
         self.view = self.loadViewFromNib()
         self.view.frame = bounds
         self.view.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
+        
         self.addSubview(self.view)
     }
     
@@ -45,9 +48,14 @@ class TestView: EPCardView {
         let bundle = NSBundle(forClass: self.dynamicType)
         let nib = UINib(nibName: "TestView", bundle: bundle)
         let view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
+        print("LOADING FROM NIB")
+        self.checkButton.setFAIcon(FAType.FAHeart, iconSize: 60, forState: UIControlState.Normal)
+        self.checkButton.setFATitleColor(UIColor.redColor())
         
-        self.profileImageView.layer.cornerRadius = self.profileImageView.frame.size.width/2
-        self.profileImageView.layer.masksToBounds = true
+        self.cancelButton.setFAIcon(FAType.FACheck, iconSize: 60, forState: UIControlState.Normal)
+        self.cancelButton.setFATitleColor(UIColor.redColor())
+        //self.profileImageView.layer.cornerRadius = self.profileImageView.frame.size.width/2
+        //self.profileImageView.layer.masksToBounds = true
         return view
     }
 }

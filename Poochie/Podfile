@@ -7,6 +7,8 @@ pod 'Firebase'
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
 pod 'EPDeckView'
+pod 'BTNavigationDropdownMenu'
+pod 'Font-Awesome-Swift', '~> 1.4.7'
 end
 
 target 'PoochieTests' do
