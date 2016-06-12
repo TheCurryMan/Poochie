@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="tQF-0h-UzR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="FgW-lD-Z3k">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -87,7 +87,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="w0g-yB-Pg3" kind="modal" identifier="home" id="dBB-Qv-6aA"/>
+                                    <segue destination="w0g-yB-Pg3" kind="modal" identifier="" id="dBB-Qv-6aA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -98,6 +98,7 @@
                         <outlet property="email" destination="GZN-ba-nTE" id="Sdz-gJ-Kav"/>
                         <outlet property="password" destination="Xza-kn-P48" id="3E9-rZ-iqw"/>
                         <outlet property="username" destination="sil-B8-hOk" id="UeK-Eu-6IU"/>
+                        <segue destination="vTO-E0-WTu" kind="push" identifier="home" id="Abp-fe-K4e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IKR-nT-6Xb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -164,7 +165,7 @@
                     <connections>
                         <outlet property="email" destination="s86-BB-JkE" id="W6Z-vS-RP5"/>
                         <outlet property="password" destination="8o4-7J-OTf" id="04P-wJ-F4A"/>
-                        <segue destination="vTO-E0-WTu" kind="modal" identifier="goingToTinderView" id="pNf-wO-fMJ"/>
+                        <segue destination="vTO-E0-WTu" kind="push" identifier="goingToTinderView" id="mAV-85-1S2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ajo-K8-XQ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -276,10 +277,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nmm-kb-hGR" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1084" y="980"/>
+            <point key="canvasLocation" x="1098" y="1018"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FXF-Nu-Bun">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eO7-Es-0Nv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="G5r-ac-G5E"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="L3G-Mt-Uor">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vTO-E0-WTu" kind="relationship" relationship="rootViewController" id="d19-U9-FPd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ubO-aO-6pZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="1018"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="dBB-Qv-6aA"/>
+        <segue reference="d19-U9-FPd"/>
     </inferredMetricsTieBreakers>
 </document>

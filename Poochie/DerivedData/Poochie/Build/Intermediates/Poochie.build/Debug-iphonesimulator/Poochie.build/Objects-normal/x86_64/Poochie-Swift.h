@@ -93,6 +93,9 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import ObjectiveC;
+@import EPDeckView;
+@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -111,6 +114,17 @@ SWIFT_CLASS("_TtC7Poochie11AppDelegate")
 - (void)applicationDidBecomeActive:(UIApplication * _Nonnull)application;
 - (void)applicationWillTerminate:(UIApplication * _Nonnull)application;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Poochie4Item")
+@interface Item : NSObject
+@property (nonatomic, copy) NSString * _Nonnull name;
+@property (nonatomic) double price;
+@property (nonatomic, copy) NSString * _Nonnull picture;
+@property (nonatomic, copy) NSString * _Nonnull location;
+@property (nonatomic, copy) NSString * _Nonnull email;
+- (nonnull instancetype)initWithName:(NSString * _Nonnull)name price:(double)price picture:(NSString * _Nonnull)picture location:(NSString * _Nonnull)location email:(NSString * _Nonnull)email OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UITextField;
@@ -142,6 +156,57 @@ SWIFT_CLASS("_TtC7Poochie20SignUpViewController")
 - (IBAction)signup:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UILabel;
+@class UIView;
+@class UIImageView;
+@class UIButton;
+
+SWIFT_CLASS("_TtC7Poochie8TestView")
+@interface TestView : EPCardView
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified view;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified profileImageView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified displayNameLabel;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified cancelButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified checkButton;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified Location;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified Price;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)xibSetup;
+- (UIView * _Nonnull)loadViewFromNib;
+@end
+
+@class EPDeckView;
+
+SWIFT_CLASS("_TtC7Poochie20TinderViewController")
+@interface TinderViewController : UIViewController <EPDeckViewDataSource, EPDeckViewDelegate>
+@property (nonatomic, weak) IBOutlet EPDeckView * _Null_unspecified deckView;
+@property (nonatomic) NSInteger numberOfCards;
+@property (nonatomic, copy) NSArray<NSArray<NSString *> *> * _Nonnull finalData;
+- (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)didReceiveMemoryWarning;
+- (IBAction)reloadCardsButtonTapped:(id _Nonnull)sender;
+- (IBAction)throwRightButtonTapped:(id _Nonnull)sender;
+- (IBAction)throwLeftButtonTapped:(id _Nonnull)sender;
+- (IBAction)previousCardButtonTapped:(id _Nonnull)sender;
+- (NSInteger)numberOfCardsInDeckView:(EPDeckView * _Nonnull)deckView;
+- (EPCardView * _Nonnull)deckView:(EPDeckView * _Nonnull)deckView cardViewAtIndex:(NSInteger)index;
+- (UIButton * _Nullable)deckView:(EPDeckView * _Nonnull)deckView rightButtonForCardAtIndex:(NSInteger)index;
+- (UIButton * _Nullable)deckView:(EPDeckView * _Nonnull)deckView leftButtonForCardAtIndex:(NSInteger)index;
+- (void)deckView:(EPDeckView * _Nonnull)deckView cardAtIndex:(NSInteger)index movedToDirection:(enum CardViewDirection)direction;
+- (void)deckView:(EPDeckView * _Nonnull)deckView didTapLeftButtonAtIndex:(NSInteger)index;
+- (void)deckView:(EPDeckView * _Nonnull)deckView didTapRightButtonAtIndex:(NSInteger)index;
+- (void)loadCards;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface UIView (SWIFT_EXTENSION(Poochie))
++ (UIView * _Nullable)loadFromNibNamed:(NSString * _Nonnull)nibNamed bundle:(NSBundle * _Nullable)bundle;
 @end
 
 

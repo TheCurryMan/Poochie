@@ -1,0 +1,9 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
+options: "f89b453510ddcefd398f9b3d9c1c8015"
+build_time: [519011578, 721181000]
+inputs:
+  "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/Koloda/Pod/Classes/KolodaView/DraggableCardView/DraggableCardView.swift": [519011575, 0]
+  "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/Koloda/Pod/Classes/KolodaView/KolodaCardStorage.swift": [519011575, 0]
+  "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/Koloda/Pod/Classes/KolodaView/KolodaView.swift": [519011575, 0]
+  "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/Koloda/Pod/Classes/KolodaView/KolodaViewAnimatior.swift": [519011575, 0]
+  "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/Koloda/Pod/Classes/KolodaView/OverlayView/OverlayView.swift": [519011575, 0]

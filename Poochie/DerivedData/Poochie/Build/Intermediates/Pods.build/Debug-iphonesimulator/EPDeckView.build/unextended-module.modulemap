@@ -1,0 +1,10 @@
+framework module EPDeckView {
+  umbrella header "EPDeckView-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module EPDeckView.__Swift {
+    exclude header "EPDeckView-Swift.h"
+}

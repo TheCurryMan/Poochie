@@ -17,6 +17,8 @@ class TestView: EPCardView {
     @IBOutlet weak var displayNameLabel: UILabel!
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var checkButton: UIButton!
+    @IBOutlet var Location: UILabel!
+    @IBOutlet var Price: UILabel!
 
     // MARK: INITIALIZATION
     

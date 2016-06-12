@@ -12,11 +12,69 @@ class TinderViewController: UIViewController, EPDeckViewDataSource, EPDeckViewDe
     private var cardViews: [EPCardView] = []
     @IBOutlet weak var deckView: EPDeckView!
     var numberOfCards = 5;
+     var finalData = [[""]]
     
     //  MARK: - INITIALIZATION
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.hidden = true
+        var url = NSURL(string: "https://quiet-lowlands-84063.herokuapp.com/")
+        let task = NSURLSession.sharedSession().dataTaskWithURL(url!, completionHandler: { (data, response, error) -> Void in
+            
+            
+            
+            let urlError = false
+            
+            if error == nil {
+                
+               
+                
+                let urlContent = NSString(data: data!, encoding: NSUTF8StringEncoding) as NSString!
+                
+                var hacks = urlContent.componentsSeparatedByString("|")
+                for i in hacks{
+                    var arr = i.componentsSeparatedByString("-#-")
+                    if arr.count > 6{
+                        print(arr)
+                    arr.removeFirst()
+                    arr.removeLast()
+                    arr.removeAtIndex(4)
+                        print(arr)
+                        self.finalData.append(arr) }
+                    //0 is url
+                    //1 is ids
+                    //2 is money
+                    //3 is title
+                    //4 is location
+                    
+                    }
+                self.finalData.removeFirst()
+                print(self.finalData)
+                
+                    
+            }
+            
+            
+                
+                
+                dispatch_async(dispatch_get_main_queue()) {
+                    
+                    if urlError == true {
+                        
+                        print("error")
+                        
+                    } else {
+                        print("done with async")
+                        
+                        self.deckView.reloadCards()
+                        
+                        
+                    }}})
+        
+        task.resume()
+
+        
+        
 
         // Set the deckView's delegate & data source.
         self.deckView.delegate = self
@@ -118,37 +176,46 @@ class TinderViewController: UIViewController, EPDeckViewDataSource, EPDeckViewDe
     
     //  MARK: - EPDECKVIEW DATASOURCE & DELEGATE
     func numberOfCardsInDeckView(deckView: EPDeckView) -> Int {
-        return 5
+        return 10
     }
     
     func deckView(deckView: EPDeckView, cardViewAtIndex index: Int) -> EPCardView {
         //  Create a TestView to be added as a card in the deck.
         
-        let testView: TestView = TestView(frame: CGRectMake(0,0,360,360))
+        let testView: TestView = TestView(frame: CGRectMake(20,20,360,360))
         testView.center = self.deckView.center
         testView.layer.masksToBounds = false;
         testView.layer.shadowOffset = CGSizeMake(0, 0);
         testView.layer.shadowRadius = 25;
         testView.layer.shadowOpacity = 0.25;
         
-        if index%5 == 0 {
-            testView.profileImageView.image = UIImage(named: "darth_vader")
-            testView.displayNameLabel.text = "Darth Vader"
-        } else if index%5 == 1 {
-            testView.profileImageView.image = UIImage(named: "cthulhu")
-            testView.displayNameLabel.text = "Cthulhu"
-        } else if index%5 == 2 {
-            testView.profileImageView.image = UIImage(named: "cylon")
-            testView.displayNameLabel.text = "Cylon"
-        } else if index%5 == 3 {
-            testView.profileImageView.image = UIImage(named: "weeping_angel")
-            testView.displayNameLabel.text = "Weeping Angel"
-        } else if index%5 == 4 {
-            testView.profileImageView.image = UIImage(named: "terminator")
-            testView.displayNameLabel.text = "Terminator"
+        if finalData.count > 5 && finalData[index].count == 5{
+            print(finalData)
+            var data = finalData[index]
+            print(data)
+            var url = data[0]
+            var ids = data[1]
+            var money = data[2]
+            var title = data[3]
+            var location = data [4]
+            
+            
+            testView.Location.text = location
+            testView.displayNameLabel.text = title
+            testView.Price.text = money
+            
+            var arrs = ids.componentsSeparatedByString(",")
+            print(arrs)
+            var finalId = arrs[0]
+            finalId = String(finalId.characters.dropFirst())
+            finalId = String(finalId.characters.dropFirst())
+            print(finalId)
+            var photoURL = "http://images.craigslist.org/\(finalId)_300x300.jpg"
+            print(photoURL)
+            
+            testView.profileImageView.image = UIImage(data: NSData(contentsOfURL: NSURL(string: "\(photoURL)")!)!)
         }
-        
-        //  Keep a reference so you can pass the nib's buttons to the delegate functions.
+               //  Keep a reference so you can pass the nib's buttons to the delegate functions.
         self.cardViews.append(testView)
         
         return testView

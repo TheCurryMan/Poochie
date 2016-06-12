@@ -4,6 +4,33 @@
   'roots': [
     {
       'type': 'directory',
+      'name': "/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Products/Debug-iphonesimulator/EPDeckView/EPDeckView.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "EPDeckView-Swift.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Products/Debug-iphonesimulator/EPDeckView/EPDeckView.framework/Headers/EPDeckView-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "EPDeckView-umbrella.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/Target Support Files/EPDeckView/EPDeckView-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Products/Debug-iphonesimulator/EPDeckView/EPDeckView.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Intermediates/Pods.build/Debug-iphonesimulator/EPDeckView.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
       'name': "/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Products/Debug-iphonesimulator/Pods_Poochie.framework/Headers",
       'contents': [
         {

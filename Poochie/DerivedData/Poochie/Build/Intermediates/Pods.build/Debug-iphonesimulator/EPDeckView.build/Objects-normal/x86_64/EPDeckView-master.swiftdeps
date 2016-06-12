@@ -1,0 +1,8 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
+options: "a3eb03331117844984bf56c90efb9b9a"
+build_time: [519027879, 663284000]
+inputs:
+  "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/EPDeckView/Pod/Classes/EPCardView.swift": [519027877, 0]
+  "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/EPDeckView/Pod/Classes/EPDeckView.swift": [519027877, 0]
+  "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/EPDeckView/Pod/Classes/EPDeckViewAnimationManager.swift": [519027877, 0]
+  "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/EPDeckView/Pod/Classes/Extensions.swift": [519027877, 0]

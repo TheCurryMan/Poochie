@@ -4,25 +4,66 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>EPDeckView-EPDeckView.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>EPDeckView.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>Koloda.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>Pods-Poochie.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 		<key>Pods-PoochieTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>Pods-PoochieUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>pop.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>04EB3CDE78D3864B69DCA7CAAAA6A8B1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2AF9897D988A051916617D917F213BE5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4C418CD631FDB4247F82BF001200ACA7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7CEAAD8D26859FC3BC19ACC00927414C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -32,7 +73,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>A0F999819378D449E96595B2B718D25C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C7B876FBDF900A0E30D48EB0A0458FBF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D2A81D0C1838FC8E526090F065FF9BF8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E6B1196FC324EE11C45A1E1C4D62A790</key>
 		<dict>
 			<key>primary</key>
 			<true/>

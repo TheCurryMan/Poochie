@@ -1,0 +1,268 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["C6Koloda10KolodaView", ""]
+- ["C6Koloda10KolodaView", "createCardAtIndex"]
+- ["C6Koloda10KolodaView", "generateCard"]
+- ["C6Koloda10KolodaView", "configureCard"]
+provides-dynamic-lookup:
+- "generateCard"
+- "configureCard"
+depends-top-level:
+- !private "??"
+- "UInt"
+- "CGRect"
+- "DraggableCardView"
+- "KolodaView"
+depends-member:
+- !private ["Ps9AnyObject", "DraggableCardView"]
+- !private ["Ps9AnyObject", "configure"]
+- ["Ps9AnyObject", "configureCard"]
+- ["Ps9AnyObject", "createCardAtIndex"]
+- !private ["Ps9AnyObject", "dataSource"]
+- !private ["Ps9AnyObject", "delegate"]
+- !private ["Ps9AnyObject", "frameForTopCard"]
+- ["Ps9AnyObject", "generateCard"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps11CVarArgType", "DraggableCardView"]
+- !private ["Ps11CVarArgType", "configure"]
+- ["Ps11CVarArgType", "configureCard"]
+- ["Ps11CVarArgType", "createCardAtIndex"]
+- !private ["Ps11CVarArgType", "dataSource"]
+- !private ["Ps11CVarArgType", "delegate"]
+- !private ["Ps11CVarArgType", "frameForTopCard"]
+- ["Ps11CVarArgType", "generateCard"]
+- !private ["Ps11CVarArgType", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "DraggableCardView"]
+- !private ["Ps28CustomDebugStringConvertible", "configure"]
+- ["Ps28CustomDebugStringConvertible", "configureCard"]
+- ["Ps28CustomDebugStringConvertible", "createCardAtIndex"]
+- !private ["Ps28CustomDebugStringConvertible", "dataSource"]
+- !private ["Ps28CustomDebugStringConvertible", "delegate"]
+- !private ["Ps28CustomDebugStringConvertible", "frameForTopCard"]
+- ["Ps28CustomDebugStringConvertible", "generateCard"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "DraggableCardView"]
+- !private ["Ps23CustomStringConvertible", "configure"]
+- ["Ps23CustomStringConvertible", "configureCard"]
+- ["Ps23CustomStringConvertible", "createCardAtIndex"]
+- !private ["Ps23CustomStringConvertible", "dataSource"]
+- !private ["Ps23CustomStringConvertible", "delegate"]
+- !private ["Ps23CustomStringConvertible", "frameForTopCard"]
+- ["Ps23CustomStringConvertible", "generateCard"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["P6Koloda21DraggableCardDelegate", "DraggableCardView"]
+- !private ["P6Koloda21DraggableCardDelegate", "configureCard"]
+- !private ["P6Koloda21DraggableCardDelegate", "dataSource"]
+- !private ["P6Koloda21DraggableCardDelegate", "frameForTopCard"]
+- !private ["P6Koloda21DraggableCardDelegate", "generateCard"]
+- !private ["C6Koloda17DraggableCardView", "configure"]
+- !private ["C6Koloda17DraggableCardView", "delegate"]
+- !private ["C6Koloda17DraggableCardView", "init"]
+- !private ["Ps9Equatable", "DraggableCardView"]
+- !private ["Ps9Equatable", "configure"]
+- ["Ps9Equatable", "configureCard"]
+- ["Ps9Equatable", "createCardAtIndex"]
+- !private ["Ps9Equatable", "dataSource"]
+- !private ["Ps9Equatable", "delegate"]
+- !private ["Ps9Equatable", "frameForTopCard"]
+- ["Ps9Equatable", "generateCard"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps8Hashable", "DraggableCardView"]
+- !private ["Ps8Hashable", "configure"]
+- ["Ps8Hashable", "configureCard"]
+- ["Ps8Hashable", "createCardAtIndex"]
+- !private ["Ps8Hashable", "dataSource"]
+- !private ["Ps8Hashable", "delegate"]
+- !private ["Ps8Hashable", "frameForTopCard"]
+- ["Ps8Hashable", "generateCard"]
+- !private ["Ps8Hashable", "init"]
+- ["C6Koloda10KolodaView", "CGRect"]
+- ["C6Koloda10KolodaView", "DraggableCardView"]
+- ["C6Koloda10KolodaView", "UInt"]
+- ["C6Koloda10KolodaView", "configureCard"]
+- ["C6Koloda10KolodaView", "createCardAtIndex"]
+- !private ["C6Koloda10KolodaView", "dataSource"]
+- !private ["C6Koloda10KolodaView", "deinit"]
+- !private ["C6Koloda10KolodaView", "frameForTopCard"]
+- ["C6Koloda10KolodaView", "generateCard"]
+- !private ["P6Koloda20KolodaViewDataSource", "deinit"]
+- !private ["P6Koloda20KolodaViewDataSource", "koloda"]
+- !private ["PSo8NSCoding", "DraggableCardView"]
+- !private ["PSo8NSCoding", "configure"]
+- ["PSo8NSCoding", "configureCard"]
+- ["PSo8NSCoding", "createCardAtIndex"]
+- !private ["PSo8NSCoding", "dataSource"]
+- !private ["PSo8NSCoding", "delegate"]
+- !private ["PSo8NSCoding", "frameForTopCard"]
+- ["PSo8NSCoding", "generateCard"]
+- !private ["PSo8NSCoding", "init"]
+- ["CSo8NSObject", "CGRect"]
+- ["CSo8NSObject", "DraggableCardView"]
+- ["CSo8NSObject", "UInt"]
+- !private ["CSo8NSObject", "configure"]
+- ["CSo8NSObject", "configureCard"]
+- ["CSo8NSObject", "createCardAtIndex"]
+- !private ["CSo8NSObject", "dataSource"]
+- !private ["CSo8NSObject", "delegate"]
+- !private ["CSo8NSObject", "frameForTopCard"]
+- ["CSo8NSObject", "generateCard"]
+- !private ["CSo8NSObject", "init"]
+- !private ["PSo16NSObjectProtocol", "DraggableCardView"]
+- !private ["PSo16NSObjectProtocol", "configure"]
+- ["PSo16NSObjectProtocol", "configureCard"]
+- ["PSo16NSObjectProtocol", "createCardAtIndex"]
+- !private ["PSo16NSObjectProtocol", "dataSource"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
+- !private ["PSo16NSObjectProtocol", "frameForTopCard"]
+- ["PSo16NSObjectProtocol", "generateCard"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "DraggableCardView"]
+- !private ["PSo29UIAccessibilityIdentification", "configure"]
+- ["PSo29UIAccessibilityIdentification", "configureCard"]
+- ["PSo29UIAccessibilityIdentification", "createCardAtIndex"]
+- !private ["PSo29UIAccessibilityIdentification", "dataSource"]
+- !private ["PSo29UIAccessibilityIdentification", "delegate"]
+- !private ["PSo29UIAccessibilityIdentification", "frameForTopCard"]
+- ["PSo29UIAccessibilityIdentification", "generateCard"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo12UIAppearance", "DraggableCardView"]
+- !private ["PSo12UIAppearance", "configure"]
+- ["PSo12UIAppearance", "configureCard"]
+- ["PSo12UIAppearance", "createCardAtIndex"]
+- !private ["PSo12UIAppearance", "dataSource"]
+- !private ["PSo12UIAppearance", "delegate"]
+- !private ["PSo12UIAppearance", "frameForTopCard"]
+- ["PSo12UIAppearance", "generateCard"]
+- !private ["PSo12UIAppearance", "init"]
+- !private ["PSo21UIAppearanceContainer", "DraggableCardView"]
+- !private ["PSo21UIAppearanceContainer", "configure"]
+- ["PSo21UIAppearanceContainer", "configureCard"]
+- ["PSo21UIAppearanceContainer", "createCardAtIndex"]
+- !private ["PSo21UIAppearanceContainer", "dataSource"]
+- !private ["PSo21UIAppearanceContainer", "delegate"]
+- !private ["PSo21UIAppearanceContainer", "frameForTopCard"]
+- ["PSo21UIAppearanceContainer", "generateCard"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo17UICoordinateSpace", "DraggableCardView"]
+- !private ["PSo17UICoordinateSpace", "configure"]
+- ["PSo17UICoordinateSpace", "configureCard"]
+- ["PSo17UICoordinateSpace", "createCardAtIndex"]
+- !private ["PSo17UICoordinateSpace", "dataSource"]
+- !private ["PSo17UICoordinateSpace", "delegate"]
+- !private ["PSo17UICoordinateSpace", "frameForTopCard"]
+- ["PSo17UICoordinateSpace", "generateCard"]
+- !private ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo13UIDynamicItem", "DraggableCardView"]
+- !private ["PSo13UIDynamicItem", "configure"]
+- ["PSo13UIDynamicItem", "configureCard"]
+- ["PSo13UIDynamicItem", "createCardAtIndex"]
+- !private ["PSo13UIDynamicItem", "dataSource"]
+- !private ["PSo13UIDynamicItem", "delegate"]
+- !private ["PSo13UIDynamicItem", "frameForTopCard"]
+- ["PSo13UIDynamicItem", "generateCard"]
+- !private ["PSo13UIDynamicItem", "init"]
+- !private ["PSo18UIFocusEnvironment", "DraggableCardView"]
+- !private ["PSo18UIFocusEnvironment", "configure"]
+- ["PSo18UIFocusEnvironment", "configureCard"]
+- ["PSo18UIFocusEnvironment", "createCardAtIndex"]
+- !private ["PSo18UIFocusEnvironment", "dataSource"]
+- !private ["PSo18UIFocusEnvironment", "delegate"]
+- !private ["PSo18UIFocusEnvironment", "frameForTopCard"]
+- ["PSo18UIFocusEnvironment", "generateCard"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- ["CSo11UIResponder", "CGRect"]
+- ["CSo11UIResponder", "DraggableCardView"]
+- ["CSo11UIResponder", "UInt"]
+- !private ["CSo11UIResponder", "configure"]
+- ["CSo11UIResponder", "configureCard"]
+- ["CSo11UIResponder", "createCardAtIndex"]
+- !private ["CSo11UIResponder", "dataSource"]
+- !private ["CSo11UIResponder", "delegate"]
+- !private ["CSo11UIResponder", "frameForTopCard"]
+- ["CSo11UIResponder", "generateCard"]
+- !private ["CSo11UIResponder", "init"]
+- !private ["PSo18UITraitEnvironment", "DraggableCardView"]
+- !private ["PSo18UITraitEnvironment", "configure"]
+- ["PSo18UITraitEnvironment", "configureCard"]
+- ["PSo18UITraitEnvironment", "createCardAtIndex"]
+- !private ["PSo18UITraitEnvironment", "dataSource"]
+- !private ["PSo18UITraitEnvironment", "delegate"]
+- !private ["PSo18UITraitEnvironment", "frameForTopCard"]
+- ["PSo18UITraitEnvironment", "generateCard"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- ["CSo6UIView", "CGRect"]
+- ["CSo6UIView", "DraggableCardView"]
+- ["CSo6UIView", "UInt"]
+- !private ["CSo6UIView", "configure"]
+- ["CSo6UIView", "configureCard"]
+- ["CSo6UIView", "createCardAtIndex"]
+- !private ["CSo6UIView", "dataSource"]
+- !private ["CSo6UIView", "delegate"]
+- !private ["CSo6UIView", "frameForTopCard"]
+- ["CSo6UIView", "generateCard"]
+- !private ["CSo6UIView", "init"]
+- !private ["Ps12_Reflectable", "DraggableCardView"]
+- !private ["Ps12_Reflectable", "configure"]
+- ["Ps12_Reflectable", "configureCard"]
+- ["Ps12_Reflectable", "createCardAtIndex"]
+- !private ["Ps12_Reflectable", "dataSource"]
+- !private ["Ps12_Reflectable", "delegate"]
+- !private ["Ps12_Reflectable", "frameForTopCard"]
+- ["Ps12_Reflectable", "generateCard"]
+- !private ["Ps12_Reflectable", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- !private "P6Koloda21DraggableCardDelegate"
+- !private "C6Koloda17DraggableCardView"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "C6Koloda10KolodaView"
+- !private "P6Koloda20KolodaViewDataSource"
+- "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "CSo11UIResponder"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/Target Support Files/Koloda/Koloda-umbrella.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Intermediates/Pods.build/Debug-iphonesimulator/Koloda.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/pop/pop/POPLayerExtras.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/pop/pop/POPDecayAnimation.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/pop/pop/POPCustomAnimation.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/pop/pop/POPBasicAnimation.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/pop/pop/POPAnimator.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/pop/pop/POPPropertyAnimation.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/pop/pop/POPSpringAnimation.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/pop/pop/POPAnimationExtras.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/pop/pop/POPGeometry.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/pop/pop/POPAnimationEvent.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/pop/pop/POPAnimationTracer.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/pop/pop/POPAnimation.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/pop/pop/POPAnimatableProperty.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/pop/pop/POPDefines.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/pop/pop/POP.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/Target Support Files/pop/pop-umbrella.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Intermediates/Pods.build/Debug-iphonesimulator/pop.build/module.modulemap"
+interface-hash: "e56056b2ca7fcbf709771717c465d0de"

@@ -1,0 +1,152 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Item"
+provides-nominal:
+- "C7Poochie4Item"
+provides-member:
+- ["C7Poochie4Item", ""]
+provides-dynamic-lookup:
+- "price"
+- "name"
+- "email"
+- "location"
+- "picture"
+depends-top-level:
+- "NSObject"
+- "Double"
+- "String"
+- "Item"
+- !private "StringLiteralType"
+depends-member:
+- ["Ps9AnyObject", "email"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "location"]
+- ["Ps9AnyObject", "name"]
+- ["Ps9AnyObject", "picture"]
+- ["Ps9AnyObject", "price"]
+- ["Ps9AnyObject", ""]
+- ["Ps11CVarArgType", "email"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "location"]
+- ["Ps11CVarArgType", "name"]
+- ["Ps11CVarArgType", "picture"]
+- ["Ps11CVarArgType", "price"]
+- ["Ps11CVarArgType", ""]
+- ["Ps28CustomDebugStringConvertible", "email"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "location"]
+- ["Ps28CustomDebugStringConvertible", "name"]
+- ["Ps28CustomDebugStringConvertible", "picture"]
+- ["Ps28CustomDebugStringConvertible", "price"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "email"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "location"]
+- ["Ps23CustomStringConvertible", "name"]
+- ["Ps23CustomStringConvertible", "picture"]
+- ["Ps23CustomStringConvertible", "price"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "email"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "location"]
+- ["Ps9Equatable", "name"]
+- ["Ps9Equatable", "picture"]
+- ["Ps9Equatable", "price"]
+- ["Ps9Equatable", ""]
+- ["Ps8Hashable", "email"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "location"]
+- ["Ps8Hashable", "name"]
+- ["Ps8Hashable", "picture"]
+- ["Ps8Hashable", "price"]
+- ["Ps8Hashable", ""]
+- ["C7Poochie4Item", "Double"]
+- ["C7Poochie4Item", "String"]
+- ["C7Poochie4Item", "deinit"]
+- ["C7Poochie4Item", "email"]
+- ["C7Poochie4Item", "init"]
+- ["C7Poochie4Item", "location"]
+- ["C7Poochie4Item", "name"]
+- ["C7Poochie4Item", "picture"]
+- ["C7Poochie4Item", "price"]
+- ["CSo8NSObject", "Double"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "email"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "location"]
+- ["CSo8NSObject", "name"]
+- ["CSo8NSObject", "picture"]
+- ["CSo8NSObject", "price"]
+- ["CSo8NSObject", ""]
+- ["PSo16NSObjectProtocol", "email"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "location"]
+- ["PSo16NSObjectProtocol", "name"]
+- ["PSo16NSObjectProtocol", "picture"]
+- ["PSo16NSObjectProtocol", "price"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["Vs12StaticString", "deinit"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "C7Poochie4Item"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "Vs12StaticString"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Products/Debug-iphonesimulator/EPDeckView/EPDeckView.framework/Modules/EPDeckView.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Products/Debug-iphonesimulator/EPDeckView/EPDeckView.framework/Headers/EPDeckView-Swift.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/Firebase/Headers/module.modulemap"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Products/Debug-iphonesimulator/EPDeckView/EPDeckView.framework/Headers/EPDeckView-umbrella.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Products/Debug-iphonesimulator/EPDeckView/EPDeckView.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/Firebase/Headers/Firebase.h"
+interface-hash: "402dc63545f1ebdb8f1cdd104cbd81b6"

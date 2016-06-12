@@ -1,0 +1,680 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TestView"
+provides-nominal:
+- "C7Poochie8TestView"
+provides-member:
+- ["C7Poochie8TestView", ""]
+- ["CSo6UIView", ""]
+- ["CSo6UIView", "loadFromNibNamed"]
+provides-dynamic-lookup:
+- "cancelButton"
+- "displayNameLabel"
+- "loadFromNibNamed"
+- "loadViewFromNib"
+- "Location"
+- "view"
+- "checkButton"
+- "xibSetup"
+- "Price"
+- "profileImageView"
+depends-top-level:
+- "UIView"
+- !private "StringLiteralType"
+- !private "/"
+- "EPCardView"
+- "NSCoder"
+- !private "UINib"
+- "UILabel"
+- !private "UIViewAutoresizing"
+- "UIImageView"
+- !private "Array"
+- "CGRect"
+- "String"
+- "UIButton"
+- "NSBundle"
+- "TestView"
+- !private "BooleanLiteralType"
+depends-member:
+- ["Ps9AnyObject", "Location"]
+- !private ["Ps9AnyObject", "NSBundle"]
+- ["Ps9AnyObject", "Price"]
+- !private ["Ps9AnyObject", "UINib"]
+- !private ["Ps9AnyObject", "UIViewAutoresizing"]
+- !private ["Ps9AnyObject", "addSubview"]
+- !private ["Ps9AnyObject", "autoresizingMask"]
+- !private ["Ps9AnyObject", "bounds"]
+- ["Ps9AnyObject", "cancelButton"]
+- ["Ps9AnyObject", "checkButton"]
+- !private ["Ps9AnyObject", "cornerRadius"]
+- ["Ps9AnyObject", "displayNameLabel"]
+- !private ["Ps9AnyObject", "frame"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "instantiateWithOwner"]
+- !private ["Ps9AnyObject", "layer"]
+- ["Ps9AnyObject", "loadFromNibNamed"]
+- ["Ps9AnyObject", "loadViewFromNib"]
+- !private ["Ps9AnyObject", "masksToBounds"]
+- ["Ps9AnyObject", "profileImageView"]
+- ["Ps9AnyObject", "view"]
+- ["Ps9AnyObject", "xibSetup"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "Index"]
+- !private ["Sa", "deinit"]
+- !private ["Sa", "subscript"]
+- !private ["Ps23ArrayLiteralConvertible", "Element"]
+- !private ["Ps23ArrayLiteralConvertible", "FlexibleHeight"]
+- !private ["Ps23ArrayLiteralConvertible", "FlexibleWidth"]
+- !private ["Ps23ArrayLiteralConvertible", "Index"]
+- !private ["Ps23ArrayLiteralConvertible", "subscript"]
+- !private ["CSo7CALayer", "cornerRadius"]
+- !private ["CSo7CALayer", "masksToBounds"]
+- !private ["PSo13CAMediaTiming", "cornerRadius"]
+- !private ["PSo13CAMediaTiming", "masksToBounds"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["VSC6CGRect", "size"]
+- !private ["VSC6CGSize", "width"]
+- ["Ps11CVarArgType", "Location"]
+- !private ["Ps11CVarArgType", "NSBundle"]
+- ["Ps11CVarArgType", "Price"]
+- !private ["Ps11CVarArgType", "UINib"]
+- !private ["Ps11CVarArgType", "UIViewAutoresizing"]
+- !private ["Ps11CVarArgType", "addSubview"]
+- !private ["Ps11CVarArgType", "autoresizingMask"]
+- !private ["Ps11CVarArgType", "bounds"]
+- ["Ps11CVarArgType", "cancelButton"]
+- ["Ps11CVarArgType", "checkButton"]
+- !private ["Ps11CVarArgType", "cornerRadius"]
+- ["Ps11CVarArgType", "displayNameLabel"]
+- !private ["Ps11CVarArgType", "frame"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "instantiateWithOwner"]
+- !private ["Ps11CVarArgType", "layer"]
+- ["Ps11CVarArgType", "loadFromNibNamed"]
+- ["Ps11CVarArgType", "loadViewFromNib"]
+- !private ["Ps11CVarArgType", "masksToBounds"]
+- ["Ps11CVarArgType", "profileImageView"]
+- ["Ps11CVarArgType", "view"]
+- ["Ps11CVarArgType", "xibSetup"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps14CollectionType", "Generator"]
+- !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "_Element"]
+- !private ["Ps14CollectionType", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
+- ["Ps28CustomDebugStringConvertible", "Location"]
+- !private ["Ps28CustomDebugStringConvertible", "NSBundle"]
+- ["Ps28CustomDebugStringConvertible", "Price"]
+- !private ["Ps28CustomDebugStringConvertible", "UINib"]
+- !private ["Ps28CustomDebugStringConvertible", "UIViewAutoresizing"]
+- !private ["Ps28CustomDebugStringConvertible", "addSubview"]
+- !private ["Ps28CustomDebugStringConvertible", "autoresizingMask"]
+- !private ["Ps28CustomDebugStringConvertible", "bounds"]
+- ["Ps28CustomDebugStringConvertible", "cancelButton"]
+- ["Ps28CustomDebugStringConvertible", "checkButton"]
+- !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
+- ["Ps28CustomDebugStringConvertible", "displayNameLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "frame"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "instantiateWithOwner"]
+- !private ["Ps28CustomDebugStringConvertible", "layer"]
+- ["Ps28CustomDebugStringConvertible", "loadFromNibNamed"]
+- ["Ps28CustomDebugStringConvertible", "loadViewFromNib"]
+- !private ["Ps28CustomDebugStringConvertible", "masksToBounds"]
+- ["Ps28CustomDebugStringConvertible", "profileImageView"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- ["Ps28CustomDebugStringConvertible", "view"]
+- ["Ps28CustomDebugStringConvertible", "xibSetup"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "Index"]
+- ["Ps23CustomStringConvertible", "Location"]
+- !private ["Ps23CustomStringConvertible", "NSBundle"]
+- ["Ps23CustomStringConvertible", "Price"]
+- !private ["Ps23CustomStringConvertible", "UINib"]
+- !private ["Ps23CustomStringConvertible", "UIViewAutoresizing"]
+- !private ["Ps23CustomStringConvertible", "addSubview"]
+- !private ["Ps23CustomStringConvertible", "autoresizingMask"]
+- !private ["Ps23CustomStringConvertible", "bounds"]
+- ["Ps23CustomStringConvertible", "cancelButton"]
+- ["Ps23CustomStringConvertible", "checkButton"]
+- !private ["Ps23CustomStringConvertible", "cornerRadius"]
+- ["Ps23CustomStringConvertible", "displayNameLabel"]
+- !private ["Ps23CustomStringConvertible", "frame"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "instantiateWithOwner"]
+- !private ["Ps23CustomStringConvertible", "layer"]
+- ["Ps23CustomStringConvertible", "loadFromNibNamed"]
+- ["Ps23CustomStringConvertible", "loadViewFromNib"]
+- !private ["Ps23CustomStringConvertible", "masksToBounds"]
+- ["Ps23CustomStringConvertible", "profileImageView"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- ["Ps23CustomStringConvertible", "view"]
+- ["Ps23CustomStringConvertible", "xibSetup"]
+- ["Ps23CustomStringConvertible", ""]
+- ["C10EPDeckView10EPCardView", "CGRect"]
+- ["C10EPDeckView10EPCardView", "Location"]
+- !private ["C10EPDeckView10EPCardView", "NSBundle"]
+- ["C10EPDeckView10EPCardView", "NSCoder"]
+- ["C10EPDeckView10EPCardView", "Price"]
+- ["C10EPDeckView10EPCardView", "UIButton"]
+- ["C10EPDeckView10EPCardView", "UIImageView"]
+- ["C10EPDeckView10EPCardView", "UILabel"]
+- !private ["C10EPDeckView10EPCardView", "UINib"]
+- ["C10EPDeckView10EPCardView", "UIView"]
+- !private ["C10EPDeckView10EPCardView", "UIViewAutoresizing"]
+- !private ["C10EPDeckView10EPCardView", "addSubview"]
+- !private ["C10EPDeckView10EPCardView", "bounds"]
+- ["C10EPDeckView10EPCardView", "cancelButton"]
+- ["C10EPDeckView10EPCardView", "checkButton"]
+- ["C10EPDeckView10EPCardView", "displayNameLabel"]
+- ["C10EPDeckView10EPCardView", "init"]
+- ["C10EPDeckView10EPCardView", "loadViewFromNib"]
+- ["C10EPDeckView10EPCardView", "profileImageView"]
+- ["C10EPDeckView10EPCardView", "view"]
+- ["C10EPDeckView10EPCardView", "xibSetup"]
+- ["C10EPDeckView10EPCardView", ""]
+- !private ["Ps9Equatable", "Element"]
+- !private ["Ps9Equatable", "FlexibleHeight"]
+- !private ["Ps9Equatable", "FlexibleWidth"]
+- ["Ps9Equatable", "Location"]
+- !private ["Ps9Equatable", "NSBundle"]
+- ["Ps9Equatable", "Price"]
+- !private ["Ps9Equatable", "UINib"]
+- !private ["Ps9Equatable", "UIViewAutoresizing"]
+- !private ["Ps9Equatable", "addSubview"]
+- !private ["Ps9Equatable", "autoresizingMask"]
+- !private ["Ps9Equatable", "bounds"]
+- ["Ps9Equatable", "cancelButton"]
+- ["Ps9Equatable", "checkButton"]
+- !private ["Ps9Equatable", "cornerRadius"]
+- ["Ps9Equatable", "displayNameLabel"]
+- !private ["Ps9Equatable", "frame"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "instantiateWithOwner"]
+- !private ["Ps9Equatable", "layer"]
+- ["Ps9Equatable", "loadFromNibNamed"]
+- ["Ps9Equatable", "loadViewFromNib"]
+- !private ["Ps9Equatable", "masksToBounds"]
+- ["Ps9Equatable", "profileImageView"]
+- !private ["Ps9Equatable", "size"]
+- ["Ps9Equatable", "view"]
+- !private ["Ps9Equatable", "width"]
+- ["Ps9Equatable", "xibSetup"]
+- ["Ps9Equatable", ""]
+- !private ["Ps13GeneratorType", "Element"]
+- ["Ps8Hashable", "Location"]
+- !private ["Ps8Hashable", "NSBundle"]
+- ["Ps8Hashable", "Price"]
+- !private ["Ps8Hashable", "UINib"]
+- !private ["Ps8Hashable", "UIViewAutoresizing"]
+- !private ["Ps8Hashable", "addSubview"]
+- !private ["Ps8Hashable", "autoresizingMask"]
+- !private ["Ps8Hashable", "bounds"]
+- ["Ps8Hashable", "cancelButton"]
+- ["Ps8Hashable", "checkButton"]
+- !private ["Ps8Hashable", "cornerRadius"]
+- ["Ps8Hashable", "displayNameLabel"]
+- !private ["Ps8Hashable", "frame"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "instantiateWithOwner"]
+- !private ["Ps8Hashable", "layer"]
+- ["Ps8Hashable", "loadFromNibNamed"]
+- ["Ps8Hashable", "loadViewFromNib"]
+- !private ["Ps8Hashable", "masksToBounds"]
+- ["Ps8Hashable", "profileImageView"]
+- ["Ps8Hashable", "view"]
+- ["Ps8Hashable", "xibSetup"]
+- ["Ps8Hashable", ""]
+- !private ["Ps9Indexable", "Generator"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "subscript"]
+- !private ["Vs17IndexingGenerator", "Element"]
+- !private ["Ps21MutableCollectionType", "Index"]
+- !private ["Ps21MutableCollectionType", "subscript"]
+- !private ["Ps16MutableIndexable", "Index"]
+- !private ["Ps16MutableIndexable", "subscript"]
+- !private ["Ps16MutableSliceable", "Index"]
+- !private ["Ps16MutableSliceable", "subscript"]
+- !private ["CSo8NSBundle", "init"]
+- ["PSo8NSCoding", "Location"]
+- !private ["PSo8NSCoding", "NSBundle"]
+- ["PSo8NSCoding", "Price"]
+- !private ["PSo8NSCoding", "UINib"]
+- !private ["PSo8NSCoding", "UIViewAutoresizing"]
+- !private ["PSo8NSCoding", "addSubview"]
+- !private ["PSo8NSCoding", "autoresizingMask"]
+- !private ["PSo8NSCoding", "bounds"]
+- ["PSo8NSCoding", "cancelButton"]
+- ["PSo8NSCoding", "checkButton"]
+- !private ["PSo8NSCoding", "cornerRadius"]
+- ["PSo8NSCoding", "displayNameLabel"]
+- !private ["PSo8NSCoding", "frame"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "layer"]
+- ["PSo8NSCoding", "loadViewFromNib"]
+- !private ["PSo8NSCoding", "masksToBounds"]
+- ["PSo8NSCoding", "profileImageView"]
+- ["PSo8NSCoding", "view"]
+- ["PSo8NSCoding", "xibSetup"]
+- ["PSo8NSCoding", ""]
+- ["CSo8NSObject", "CGRect"]
+- ["CSo8NSObject", "Location"]
+- ["CSo8NSObject", "NSBundle"]
+- ["CSo8NSObject", "NSCoder"]
+- ["CSo8NSObject", "Price"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UIButton"]
+- ["CSo8NSObject", "UIImageView"]
+- ["CSo8NSObject", "UILabel"]
+- !private ["CSo8NSObject", "UINib"]
+- ["CSo8NSObject", "UIView"]
+- !private ["CSo8NSObject", "UIViewAutoresizing"]
+- !private ["CSo8NSObject", "addSubview"]
+- !private ["CSo8NSObject", "autoresizingMask"]
+- !private ["CSo8NSObject", "bounds"]
+- ["CSo8NSObject", "cancelButton"]
+- ["CSo8NSObject", "checkButton"]
+- !private ["CSo8NSObject", "cornerRadius"]
+- ["CSo8NSObject", "displayNameLabel"]
+- !private ["CSo8NSObject", "frame"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "instantiateWithOwner"]
+- !private ["CSo8NSObject", "layer"]
+- ["CSo8NSObject", "loadFromNibNamed"]
+- ["CSo8NSObject", "loadViewFromNib"]
+- !private ["CSo8NSObject", "masksToBounds"]
+- ["CSo8NSObject", "profileImageView"]
+- ["CSo8NSObject", "view"]
+- ["CSo8NSObject", "xibSetup"]
+- ["PSo16NSObjectProtocol", "Location"]
+- !private ["PSo16NSObjectProtocol", "NSBundle"]
+- ["PSo16NSObjectProtocol", "Price"]
+- !private ["PSo16NSObjectProtocol", "UINib"]
+- !private ["PSo16NSObjectProtocol", "UIViewAutoresizing"]
+- !private ["PSo16NSObjectProtocol", "addSubview"]
+- !private ["PSo16NSObjectProtocol", "autoresizingMask"]
+- !private ["PSo16NSObjectProtocol", "bounds"]
+- ["PSo16NSObjectProtocol", "cancelButton"]
+- ["PSo16NSObjectProtocol", "checkButton"]
+- !private ["PSo16NSObjectProtocol", "cornerRadius"]
+- ["PSo16NSObjectProtocol", "displayNameLabel"]
+- !private ["PSo16NSObjectProtocol", "frame"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "instantiateWithOwner"]
+- !private ["PSo16NSObjectProtocol", "layer"]
+- ["PSo16NSObjectProtocol", "loadFromNibNamed"]
+- ["PSo16NSObjectProtocol", "loadViewFromNib"]
+- !private ["PSo16NSObjectProtocol", "masksToBounds"]
+- ["PSo16NSObjectProtocol", "profileImageView"]
+- ["PSo16NSObjectProtocol", "view"]
+- ["PSo16NSObjectProtocol", "xibSetup"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["Ps13OptionSetType", "Element"]
+- !private ["Ps13OptionSetType", "FlexibleHeight"]
+- !private ["Ps13OptionSetType", "FlexibleWidth"]
+- !private ["Ps30RangeReplaceableCollectionType", "Index"]
+- !private ["Ps30RangeReplaceableCollectionType", "subscript"]
+- !private ["Ps16RawRepresentable", "Element"]
+- !private ["Ps16RawRepresentable", "FlexibleHeight"]
+- !private ["Ps16RawRepresentable", "FlexibleWidth"]
+- !private ["Ps12SequenceType", "Element"]
+- !private ["Ps12SequenceType", "Generator"]
+- !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "_Element"]
+- !private ["Ps12SequenceType", "subscript"]
+- !private ["Ps14SetAlgebraType", "Element"]
+- !private ["Ps14SetAlgebraType", "FlexibleHeight"]
+- !private ["Ps14SetAlgebraType", "FlexibleWidth"]
+- !private ["Vs5Slice", "Generator"]
+- !private ["Vs5Slice", "Index"]
+- !private ["Vs5Slice", "SubSequence"]
+- !private ["Vs5Slice", "_Element"]
+- ["C7Poochie8TestView", "CGRect"]
+- ["C7Poochie8TestView", "Location"]
+- !private ["C7Poochie8TestView", "NSBundle"]
+- ["C7Poochie8TestView", "NSCoder"]
+- ["C7Poochie8TestView", "Price"]
+- ["C7Poochie8TestView", "UIButton"]
+- ["C7Poochie8TestView", "UIImageView"]
+- ["C7Poochie8TestView", "UILabel"]
+- !private ["C7Poochie8TestView", "UINib"]
+- ["C7Poochie8TestView", "UIView"]
+- !private ["C7Poochie8TestView", "UIViewAutoresizing"]
+- !private ["C7Poochie8TestView", "addSubview"]
+- !private ["C7Poochie8TestView", "bounds"]
+- ["C7Poochie8TestView", "cancelButton"]
+- ["C7Poochie8TestView", "checkButton"]
+- ["C7Poochie8TestView", "deinit"]
+- ["C7Poochie8TestView", "displayNameLabel"]
+- ["C7Poochie8TestView", "init"]
+- ["C7Poochie8TestView", "loadViewFromNib"]
+- ["C7Poochie8TestView", "profileImageView"]
+- ["C7Poochie8TestView", "view"]
+- ["C7Poochie8TestView", "xibSetup"]
+- ["PSo29UIAccessibilityIdentification", "Location"]
+- !private ["PSo29UIAccessibilityIdentification", "NSBundle"]
+- ["PSo29UIAccessibilityIdentification", "Price"]
+- !private ["PSo29UIAccessibilityIdentification", "UINib"]
+- !private ["PSo29UIAccessibilityIdentification", "UIViewAutoresizing"]
+- !private ["PSo29UIAccessibilityIdentification", "addSubview"]
+- !private ["PSo29UIAccessibilityIdentification", "autoresizingMask"]
+- !private ["PSo29UIAccessibilityIdentification", "bounds"]
+- ["PSo29UIAccessibilityIdentification", "cancelButton"]
+- ["PSo29UIAccessibilityIdentification", "checkButton"]
+- ["PSo29UIAccessibilityIdentification", "displayNameLabel"]
+- !private ["PSo29UIAccessibilityIdentification", "frame"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "layer"]
+- ["PSo29UIAccessibilityIdentification", "loadViewFromNib"]
+- ["PSo29UIAccessibilityIdentification", "profileImageView"]
+- ["PSo29UIAccessibilityIdentification", "view"]
+- ["PSo29UIAccessibilityIdentification", "xibSetup"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- ["PSo12UIAppearance", "Location"]
+- !private ["PSo12UIAppearance", "NSBundle"]
+- ["PSo12UIAppearance", "Price"]
+- !private ["PSo12UIAppearance", "UINib"]
+- !private ["PSo12UIAppearance", "UIViewAutoresizing"]
+- !private ["PSo12UIAppearance", "addSubview"]
+- !private ["PSo12UIAppearance", "autoresizingMask"]
+- !private ["PSo12UIAppearance", "bounds"]
+- ["PSo12UIAppearance", "cancelButton"]
+- ["PSo12UIAppearance", "checkButton"]
+- ["PSo12UIAppearance", "displayNameLabel"]
+- !private ["PSo12UIAppearance", "frame"]
+- ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "layer"]
+- ["PSo12UIAppearance", "loadViewFromNib"]
+- ["PSo12UIAppearance", "profileImageView"]
+- ["PSo12UIAppearance", "view"]
+- ["PSo12UIAppearance", "xibSetup"]
+- ["PSo12UIAppearance", ""]
+- ["PSo21UIAppearanceContainer", "Location"]
+- !private ["PSo21UIAppearanceContainer", "NSBundle"]
+- ["PSo21UIAppearanceContainer", "Price"]
+- !private ["PSo21UIAppearanceContainer", "UINib"]
+- !private ["PSo21UIAppearanceContainer", "UIViewAutoresizing"]
+- !private ["PSo21UIAppearanceContainer", "addSubview"]
+- !private ["PSo21UIAppearanceContainer", "autoresizingMask"]
+- !private ["PSo21UIAppearanceContainer", "bounds"]
+- ["PSo21UIAppearanceContainer", "cancelButton"]
+- ["PSo21UIAppearanceContainer", "checkButton"]
+- ["PSo21UIAppearanceContainer", "displayNameLabel"]
+- !private ["PSo21UIAppearanceContainer", "frame"]
+- ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "layer"]
+- ["PSo21UIAppearanceContainer", "loadViewFromNib"]
+- ["PSo21UIAppearanceContainer", "profileImageView"]
+- ["PSo21UIAppearanceContainer", "view"]
+- ["PSo21UIAppearanceContainer", "xibSetup"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo17UICoordinateSpace", "Location"]
+- !private ["PSo17UICoordinateSpace", "NSBundle"]
+- ["PSo17UICoordinateSpace", "Price"]
+- !private ["PSo17UICoordinateSpace", "UINib"]
+- !private ["PSo17UICoordinateSpace", "UIViewAutoresizing"]
+- !private ["PSo17UICoordinateSpace", "addSubview"]
+- !private ["PSo17UICoordinateSpace", "autoresizingMask"]
+- !private ["PSo17UICoordinateSpace", "bounds"]
+- ["PSo17UICoordinateSpace", "cancelButton"]
+- ["PSo17UICoordinateSpace", "checkButton"]
+- ["PSo17UICoordinateSpace", "displayNameLabel"]
+- !private ["PSo17UICoordinateSpace", "frame"]
+- ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "layer"]
+- ["PSo17UICoordinateSpace", "loadViewFromNib"]
+- ["PSo17UICoordinateSpace", "profileImageView"]
+- ["PSo17UICoordinateSpace", "view"]
+- ["PSo17UICoordinateSpace", "xibSetup"]
+- ["PSo17UICoordinateSpace", ""]
+- ["PSo13UIDynamicItem", "Location"]
+- !private ["PSo13UIDynamicItem", "NSBundle"]
+- ["PSo13UIDynamicItem", "Price"]
+- !private ["PSo13UIDynamicItem", "UINib"]
+- !private ["PSo13UIDynamicItem", "UIViewAutoresizing"]
+- !private ["PSo13UIDynamicItem", "addSubview"]
+- !private ["PSo13UIDynamicItem", "autoresizingMask"]
+- !private ["PSo13UIDynamicItem", "bounds"]
+- ["PSo13UIDynamicItem", "cancelButton"]
+- ["PSo13UIDynamicItem", "checkButton"]
+- ["PSo13UIDynamicItem", "displayNameLabel"]
+- !private ["PSo13UIDynamicItem", "frame"]
+- ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "layer"]
+- ["PSo13UIDynamicItem", "loadViewFromNib"]
+- ["PSo13UIDynamicItem", "profileImageView"]
+- ["PSo13UIDynamicItem", "view"]
+- ["PSo13UIDynamicItem", "xibSetup"]
+- ["PSo13UIDynamicItem", ""]
+- ["PSo18UIFocusEnvironment", "Location"]
+- !private ["PSo18UIFocusEnvironment", "NSBundle"]
+- ["PSo18UIFocusEnvironment", "Price"]
+- !private ["PSo18UIFocusEnvironment", "UINib"]
+- !private ["PSo18UIFocusEnvironment", "UIViewAutoresizing"]
+- !private ["PSo18UIFocusEnvironment", "addSubview"]
+- !private ["PSo18UIFocusEnvironment", "autoresizingMask"]
+- !private ["PSo18UIFocusEnvironment", "bounds"]
+- ["PSo18UIFocusEnvironment", "cancelButton"]
+- ["PSo18UIFocusEnvironment", "checkButton"]
+- ["PSo18UIFocusEnvironment", "displayNameLabel"]
+- !private ["PSo18UIFocusEnvironment", "frame"]
+- ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "layer"]
+- ["PSo18UIFocusEnvironment", "loadViewFromNib"]
+- ["PSo18UIFocusEnvironment", "profileImageView"]
+- ["PSo18UIFocusEnvironment", "view"]
+- ["PSo18UIFocusEnvironment", "xibSetup"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo11UIImageView", "frame"]
+- !private ["CSo11UIImageView", "layer"]
+- !private ["CSo5UINib", "init"]
+- !private ["CSo5UINib", "instantiateWithOwner"]
+- ["CSo11UIResponder", "CGRect"]
+- ["CSo11UIResponder", "Location"]
+- ["CSo11UIResponder", "NSBundle"]
+- ["CSo11UIResponder", "NSCoder"]
+- ["CSo11UIResponder", "Price"]
+- ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "UIButton"]
+- ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "UILabel"]
+- !private ["CSo11UIResponder", "UINib"]
+- ["CSo11UIResponder", "UIView"]
+- !private ["CSo11UIResponder", "UIViewAutoresizing"]
+- !private ["CSo11UIResponder", "addSubview"]
+- !private ["CSo11UIResponder", "autoresizingMask"]
+- !private ["CSo11UIResponder", "bounds"]
+- ["CSo11UIResponder", "cancelButton"]
+- ["CSo11UIResponder", "checkButton"]
+- ["CSo11UIResponder", "displayNameLabel"]
+- !private ["CSo11UIResponder", "frame"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "layer"]
+- ["CSo11UIResponder", "loadFromNibNamed"]
+- ["CSo11UIResponder", "loadViewFromNib"]
+- ["CSo11UIResponder", "profileImageView"]
+- ["CSo11UIResponder", "view"]
+- ["CSo11UIResponder", "xibSetup"]
+- ["PSo18UITraitEnvironment", "Location"]
+- !private ["PSo18UITraitEnvironment", "NSBundle"]
+- ["PSo18UITraitEnvironment", "Price"]
+- !private ["PSo18UITraitEnvironment", "UINib"]
+- !private ["PSo18UITraitEnvironment", "UIViewAutoresizing"]
+- !private ["PSo18UITraitEnvironment", "addSubview"]
+- !private ["PSo18UITraitEnvironment", "autoresizingMask"]
+- !private ["PSo18UITraitEnvironment", "bounds"]
+- ["PSo18UITraitEnvironment", "cancelButton"]
+- ["PSo18UITraitEnvironment", "checkButton"]
+- ["PSo18UITraitEnvironment", "displayNameLabel"]
+- !private ["PSo18UITraitEnvironment", "frame"]
+- ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "layer"]
+- ["PSo18UITraitEnvironment", "loadViewFromNib"]
+- ["PSo18UITraitEnvironment", "profileImageView"]
+- ["PSo18UITraitEnvironment", "view"]
+- ["PSo18UITraitEnvironment", "xibSetup"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "CGRect"]
+- ["CSo6UIView", "Location"]
+- ["CSo6UIView", "NSBundle"]
+- ["CSo6UIView", "NSCoder"]
+- ["CSo6UIView", "Price"]
+- ["CSo6UIView", "String"]
+- ["CSo6UIView", "UIButton"]
+- ["CSo6UIView", "UIImageView"]
+- ["CSo6UIView", "UILabel"]
+- !private ["CSo6UIView", "UINib"]
+- ["CSo6UIView", "UIView"]
+- !private ["CSo6UIView", "UIViewAutoresizing"]
+- !private ["CSo6UIView", "addSubview"]
+- !private ["CSo6UIView", "autoresizingMask"]
+- !private ["CSo6UIView", "bounds"]
+- ["CSo6UIView", "cancelButton"]
+- ["CSo6UIView", "checkButton"]
+- ["CSo6UIView", "displayNameLabel"]
+- !private ["CSo6UIView", "frame"]
+- ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "layer"]
+- ["CSo6UIView", "loadFromNibNamed"]
+- ["CSo6UIView", "loadViewFromNib"]
+- ["CSo6UIView", "profileImageView"]
+- ["CSo6UIView", "view"]
+- ["CSo6UIView", "xibSetup"]
+- !private ["VSC18UIViewAutoresizing", "Element"]
+- !private ["VSC18UIViewAutoresizing", "FlexibleHeight"]
+- !private ["VSC18UIViewAutoresizing", "FlexibleWidth"]
+- !private ["Ps10_ArrayType", "Index"]
+- !private ["Ps10_ArrayType", "subscript"]
+- !private ["Ps24_DestructorSafeContainer", "Index"]
+- !private ["Ps24_DestructorSafeContainer", "subscript"]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Ps12_Reflectable", "Index"]
+- ["Ps12_Reflectable", "Location"]
+- !private ["Ps12_Reflectable", "NSBundle"]
+- ["Ps12_Reflectable", "Price"]
+- !private ["Ps12_Reflectable", "UINib"]
+- !private ["Ps12_Reflectable", "UIViewAutoresizing"]
+- !private ["Ps12_Reflectable", "addSubview"]
+- !private ["Ps12_Reflectable", "autoresizingMask"]
+- !private ["Ps12_Reflectable", "bounds"]
+- ["Ps12_Reflectable", "cancelButton"]
+- ["Ps12_Reflectable", "checkButton"]
+- ["Ps12_Reflectable", "displayNameLabel"]
+- !private ["Ps12_Reflectable", "frame"]
+- ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "layer"]
+- ["Ps12_Reflectable", "loadViewFromNib"]
+- ["Ps12_Reflectable", "profileImageView"]
+- !private ["Ps12_Reflectable", "size"]
+- !private ["Ps12_Reflectable", "subscript"]
+- ["Ps12_Reflectable", "view"]
+- !private ["Ps12_Reflectable", "width"]
+- ["Ps12_Reflectable", "xibSetup"]
+- ["Ps12_Reflectable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "CSo7CALayer"
+- !private "PSo13CAMediaTiming"
+- !private "V12CoreGraphics7CGFloat"
+- !private "VSC6CGRect"
+- !private "VSC6CGSize"
+- "Ps11CVarArgType"
+- !private "Ps14CollectionType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "C10EPDeckView10EPCardView"
+- "Ps9Equatable"
+- !private "Ps13GeneratorType"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Vs17IndexingGenerator"
+- !private "Ps21MutableCollectionType"
+- !private "Ps16MutableIndexable"
+- !private "Ps16MutableSliceable"
+- !private "CSo8NSBundle"
+- "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "Ps13OptionSetType"
+- !private "Ps30RangeReplaceableCollectionType"
+- !private "Ps16RawRepresentable"
+- !private "Ps12SequenceType"
+- !private "Ps14SetAlgebraType"
+- !private "Vs5Slice"
+- "C7Poochie8TestView"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "CSo11UIImageView"
+- !private "CSo5UINib"
+- "CSo11UIResponder"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- !private "VSC18UIViewAutoresizing"
+- !private "Ps10_ArrayType"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps21_ObjectiveCBridgeable"
+- "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Products/Debug-iphonesimulator/EPDeckView/EPDeckView.framework/Modules/EPDeckView.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Products/Debug-iphonesimulator/EPDeckView/EPDeckView.framework/Headers/EPDeckView-Swift.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/Firebase/Headers/module.modulemap"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Products/Debug-iphonesimulator/EPDeckView/EPDeckView.framework/Headers/EPDeckView-umbrella.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Products/Debug-iphonesimulator/EPDeckView/EPDeckView.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Poochie/Poochie/Pods/Firebase/Headers/Firebase.h"
+interface-hash: "5fd7ffbae946b6885bb89221c3a9a290"
