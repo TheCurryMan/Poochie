@@ -6,19 +6,30 @@
 
 import UIKit
 import EPDeckView
-
-class TinderViewController: UIViewController, EPDeckViewDataSource, EPDeckViewDelegate {
+import MessageUI
+class TinderViewController: UIViewController, EPDeckViewDataSource, EPDeckViewDelegate, MFMailComposeViewControllerDelegate {
     
     private var cardViews: [EPCardView] = []
     @IBOutlet weak var deckView: EPDeckView!
-    var numberOfCards = 5;
+     var numberOfCards = 5;
+    
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
      var finalData = [[""]]
+    
+
     
     //  MARK: - INITIALIZATION
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.hidden = true
-        var url = NSURL(string: "https://quiet-lowlands-84063.herokuapp.com/")
+        
+        print("START ANIMATING")
+        self.activityIndicator.hidesWhenStopped = true;
+        self.activityIndicator.activityIndicatorViewStyle  = UIActivityIndicatorViewStyle.Gray;
+        self.activityIndicator.startAnimating()
+        
+        
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 190/255, green: 144/255, blue: 212/255, alpha: 1)
+        var url = NSURL(string: "https://quiet-lowlands-84063.herokuapp.com/?url=sss")
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!, completionHandler: { (data, response, error) -> Void in
             
             
@@ -29,6 +40,7 @@ class TinderViewController: UIViewController, EPDeckViewDataSource, EPDeckViewDe
                 
                
                 
+                
                 let urlContent = NSString(data: data!, encoding: NSUTF8StringEncoding) as NSString!
                 
                 var hacks = urlContent.componentsSeparatedByString("|")
@@ -36,9 +48,9 @@ class TinderViewController: UIViewController, EPDeckViewDataSource, EPDeckViewDe
                     var arr = i.componentsSeparatedByString("-#-")
                     if arr.count > 6{
                         print(arr)
-                    arr.removeFirst()
-                    arr.removeLast()
-                    arr.removeAtIndex(4)
+                        arr.removeFirst()
+                        arr.removeLast()
+                        arr.removeAtIndex(4)
                         print(arr)
                         self.finalData.append(arr) }
                     //0 is url
@@ -47,31 +59,35 @@ class TinderViewController: UIViewController, EPDeckViewDataSource, EPDeckViewDe
                     //3 is title
                     //4 is location
                     
-                    }
+                }
                 self.finalData.removeFirst()
                 print(self.finalData)
+                self.numberOfCards = 20
                 
-                    
+                
             }
             
             
+            
+            
+            dispatch_async(dispatch_get_main_queue()) {
                 
-                
-                dispatch_async(dispatch_get_main_queue()) {
+                if urlError == true {
                     
-                    if urlError == true {
-                        
-                        print("error")
-                        
-                    } else {
-                        print("done with async")
-                        
-                        self.deckView.reloadCards()
-                        
-                        
-                    }}})
+                    print("error")
+                    
+                } else {
+                    print("done with async")
+                    
+                    self.deckView.reloadCards()
+                    
+                    
+                }}})
         
         task.resume()
+        
+        
+        
 
         
         
@@ -115,7 +131,7 @@ class TinderViewController: UIViewController, EPDeckViewDataSource, EPDeckViewDe
         //  cardLeftFinishPoint & cardRightFinishPoint represent the points that the card will be 
         //  moved after being dragged, if it's left outside the actionMargin.
         deckViewAnimationManager.cardLeftFinishPoint = CGPointMake(-self.deckView.frame.width * 1.5, self.deckView.frame.height / 3.0)
-        deckViewAnimationManager.cardRightFinishPoint = CGPointMake(self.deckView.frame.width * 1.5, self.deckView.frame.height / 3.0)
+        deckViewAnimationManager.cardRightFinishPoint = CGPointMake(self.deckView.frame.width * 2.5, self.deckView.frame.height / 3.0)
         
         //  The deckAnimationDuration represents the duration of the animation that the card being
         //  dragged needs to return to the deck or move out of the screen. It is also the animation
@@ -124,7 +140,7 @@ class TinderViewController: UIViewController, EPDeckViewDataSource, EPDeckViewDe
         
         //  The dckAnchor represents the anchor of the deck. It can take 4 values: TopLeft, TopRight,
         //  BottomRight or BottomLeft.
-        deckViewAnimationManager.deckAnchor = .BottomLeft
+        deckViewAnimationManager.deckAnchor = .TopLeft
         
         //  deckMaxVisibleCards represents the max number of visible cards in the deck. I.e. if the
         //  deck has 52 cards but the deckMaxVisibleCards is set to 10, then card 11 to 50 will be
@@ -155,39 +171,23 @@ class TinderViewController: UIViewController, EPDeckViewDataSource, EPDeckViewDe
     }
     
     
-    //  MARK: - BUTTON ACTIONS
-    @IBAction func reloadCardsButtonTapped(sender: AnyObject) {
-        self.cardViews = []
-        self.deckView.reloadCards()
-    }
-    
-    @IBAction func throwRightButtonTapped(sender: AnyObject) {
-        self.deckView.moveTopCardToDirection(.Right)
-    }
-    
-    @IBAction func throwLeftButtonTapped(sender: AnyObject) {
-        self.deckView.moveTopCardToDirection(.Left)
-    }
-    
-    @IBAction func previousCardButtonTapped(sender: AnyObject) {
-        self.deckView.bringBackLastCardThrown()
-    }
+
     
     
     //  MARK: - EPDECKVIEW DATASOURCE & DELEGATE
     func numberOfCardsInDeckView(deckView: EPDeckView) -> Int {
-        return 10
+        return numberOfCards
     }
     
     func deckView(deckView: EPDeckView, cardViewAtIndex index: Int) -> EPCardView {
         //  Create a TestView to be added as a card in the deck.
         
-        let testView: TestView = TestView(frame: CGRectMake(20,20,360,360))
+        let testView: TestView = TestView(frame: CGRectMake(20,64,280,504))
         testView.center = self.deckView.center
         testView.layer.masksToBounds = false;
-        testView.layer.shadowOffset = CGSizeMake(0, 0);
+        testView.layer.shadowOffset = CGSizeMake(0, 1);
         testView.layer.shadowRadius = 25;
-        testView.layer.shadowOpacity = 0.25;
+        testView.layer.shadowOpacity = 0.7;
         
         if finalData.count > 5 && finalData[index].count == 5{
             print(finalData)
@@ -215,7 +215,7 @@ class TinderViewController: UIViewController, EPDeckViewDataSource, EPDeckViewDe
             
             testView.profileImageView.image = UIImage(data: NSData(contentsOfURL: NSURL(string: "\(photoURL)")!)!)
         }
-               //  Keep a reference so you can pass the nib's buttons to the delegate functions.
+        //  Keep a reference so you can pass the nib's buttons to the delegate functions.
         self.cardViews.append(testView)
         
         return testView
@@ -232,27 +232,30 @@ class TinderViewController: UIViewController, EPDeckViewDataSource, EPDeckViewDe
     }
     
     func deckView(deckView: EPDeckView, cardAtIndex index: Int, movedToDirection direction: CardViewDirection) {
-        if(numberOfCards > 0){
+            numberOfCards--
             print("Card at index \(index) moved to \(direction.description()).")
-            numberOfCards -= 1
-        }else{
-            loadCards()
+            print("Array: \(finalData)")
+        if(numberOfCards <= 0){
+            self.deckView.reloadCards()
+            numberOfCards = 5
         }
+
     }
     
     func deckView(deckView: EPDeckView, didTapLeftButtonAtIndex index: Int) {
         print("Left button of card at index: \(index) tapped.")
+         self.deckView.moveTopCardToDirection(.Left)
     }
     
     func deckView(deckView: EPDeckView, didTapRightButtonAtIndex index: Int) {
         print("Right button of card at index: \(index) tapped.")
+         self.deckView.moveTopCardToDirection(.Right)
     }
-    func loadCards(){
-        numberOfCards = 5
-    }
-
+   
 }
-
+/*
+ ata ppa par asn apt awt aba aba rbi pbi abp abo obk abf act aem amo acl acb asy psy ael agr azi pfu agm sfo aha ahv ahs ajw ama amp amc ams aph arv asg ati atl ata avg awa a
+ */
 
 
 

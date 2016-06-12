@@ -48,7 +48,6 @@ class TestView: EPCardView {
         
         self.profileImageView.layer.cornerRadius = self.profileImageView.frame.size.width/2
         self.profileImageView.layer.masksToBounds = true
-        
         return view
     }
 }
