@@ -117,6 +117,19 @@ SWIFT_CLASS("_TtC7Poochie11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIImageView;
+@class UILabel;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC7Poochie19CustomTableViewCell")
+@interface CustomTableViewCell : UITableViewCell
+@property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified itemImage;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified title;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified price;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC7Poochie4Item")
 @interface Item : NSObject
@@ -130,7 +143,6 @@ SWIFT_CLASS("_TtC7Poochie4Item")
 
 @class UITextField;
 @class NSBundle;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC7Poochie19LoginViewController")
 @interface LoginViewController : UIViewController
@@ -143,16 +155,23 @@ SWIFT_CLASS("_TtC7Poochie19LoginViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class FIRDatabaseReference;
+@class UITableView;
+@class NSIndexPath;
 
 SWIFT_CLASS("_TtC7Poochie19SavedViewController")
-@interface SavedViewController : UIViewController
+@interface SavedViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, strong) FIRDatabaseReference * _Null_unspecified ref;
+@property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified tableView;
+@property (nonatomic, copy) NSArray<NSArray<NSString *> *> * _Nonnull dataArray;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class FIRDatabaseReference;
 
 SWIFT_CLASS("_TtC7Poochie20SignUpViewController")
 @interface SignUpViewController : UIViewController
@@ -168,10 +187,8 @@ SWIFT_CLASS("_TtC7Poochie20SignUpViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UILabel;
 @class UIActivityIndicatorView;
 @class UIView;
-@class UIImageView;
 @class UIButton;
 
 SWIFT_CLASS("_TtC7Poochie8TestView")

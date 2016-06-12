@@ -24,6 +24,7 @@
 		E1E4A6A41D0CEEF400D88867 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1E4A6A31D0CEEF400D88867 /* Main.storyboard */; };
 		E1E4A6A61D0CF0CD00D88867 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E4A6A51D0CF0CD00D88867 /* LogInViewController.swift */; };
 		E1E4A6A81D0D983200D88867 /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E4A6A71D0D983200D88867 /* SavedViewController.swift */; };
+		E1E4A6AA1D0D994500D88867 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1E4A6A91D0D994500D88867 /* ItemTableViewCell.xib */; };
 		E2F234A666876E6F04B6FB07 /* Pods_PoochieUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 997C6E040DD77A0AB0982C85 /* Pods_PoochieUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		E1E4A6A31D0CEEF400D88867 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E1E4A6A51D0CF0CD00D88867 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		E1E4A6A71D0D983200D88867 /* SavedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
+		E1E4A6A91D0D994500D88867 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
 		EE0C2DAB7771D4649AE1A94B /* Pods-PoochieTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoochieTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PoochieTests/Pods-PoochieTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,13 +152,14 @@
 				36F4BABE1D0D269E0097DDD8 /* TestView.swift */,
 				36F4BABF1D0D269E0097DDD8 /* TestView.xib */,
 				36F4BAC01D0D269E0097DDD8 /* TinderViewController.swift */,
+				E1E4A6A71D0D983200D88867 /* SavedViewController.swift */,
 				36F4BABC1D0D26940097DDD8 /* Images.xcassets */,
 				E1E4A6A31D0CEEF400D88867 /* Main.storyboard */,
 				36B466B31D0CF7AC00E47697 /* Item.swift */,
 				E16C14A01D0CBEC4009444FA /* LaunchScreen.storyboard */,
+				E1E4A6A91D0D994500D88867 /* ItemTableViewCell.xib */,
 				E16C14A31D0CBEC4009444FA /* Info.plist */,
 				E1E4A6A11D0CEB0100D88867 /* GoogleService-Info.plist */,
-				E1E4A6A71D0D983200D88867 /* SavedViewController.swift */,
 			);
 			path = Poochie;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				E1E4A6A21D0CEB0100D88867 /* GoogleService-Info.plist in Resources */,
 				36F4BABD1D0D26940097DDD8 /* Images.xcassets in Resources */,
 				E16C14A21D0CBEC4009444FA /* LaunchScreen.storyboard in Resources */,
+				E1E4A6AA1D0D994500D88867 /* ItemTableViewCell.xib in Resources */,
 				E1E4A6A41D0CEEF400D88867 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

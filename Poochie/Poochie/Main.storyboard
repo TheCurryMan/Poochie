@@ -270,13 +270,27 @@
         <!--Saved-->
         <scene sceneID="DaV-CR-N4F">
             <objects>
-                <viewController id="IQf-Zq-VXN" sceneMemberID="viewController">
+                <viewController id="IQf-Zq-VXN" customClass="SavedViewController" customModule="Poochie" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="baN-UT-gCb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" id="Rmq-Cm-odj">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="IQf-Zq-VXN" id="0TA-kH-DfC"/>
+                                    <outlet property="delegate" destination="IQf-Zq-VXN" id="dFp-Uj-Jum"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Saved" id="6C4-Ny-LKA"/>
+                    <connections>
+                        <outlet property="tableView" destination="Rmq-Cm-odj" id="E9k-Nw-pqc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ltt-W3-SNh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -306,5 +320,5 @@
         <segue reference="dBB-Qv-6aA"/>
         <segue reference="d19-U9-FPd"/>
     </inferredMetricsTieBreakers>
-    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+    <color key="tintColor" red="0.81200787569999999" green="0.69356821229999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
