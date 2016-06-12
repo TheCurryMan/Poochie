@@ -6,72 +6,81 @@ provides-nominal:
 provides-member:
 - ["C7Poochie20TinderViewController", ""]
 provides-dynamic-lookup:
-- "deckView"
-- "deckView"
-- "deckView"
-- "deckView"
-- "deckView"
-- "deckView"
-- "deckView"
-- "finalData"
-- "numberOfCards"
-- "chosenCode"
-- "didReceiveMemoryWarning"
-- "numberOfCardsInDeckView"
-- "viewDidAppear"
 - "activityIndicator"
+- "didReceiveMemoryWarning"
+- "chosenCode"
+- "ref"
+- "updateValues"
+- "numberOfCards"
 - "viewDidLoad"
+- "viewDidAppear"
+- "numberOfCardsInDeckView"
+- "finalData"
+- "deckView"
+- "deckView"
+- "deckView"
+- "deckView"
+- "deckView"
+- "deckView"
+- "deckView"
 depends-top-level:
-- !private "<="
-- !private "EPDeckViewAnimationManager"
-- !private "-"
-- !private "Void"
-- "UIActivityIndicatorView"
 - !private "NSURLSession"
-- "TinderViewController"
-- !private "=="
-- "EPCardView"
-- "CardViewDirection"
-- !private "NSString"
-- !private "*"
-- "EPDeckViewDataSource"
-- !private "CGSizeMake"
-- !private "UIImage"
-- "EPDeckViewDelegate"
-- !private "NSData"
-- "StringLiteralType"
-- "MFMailComposeViewControllerDelegate"
-- "UnicodeScalarType"
-- "Array"
-- !private "BTNavigationDropdownMenu"
-- !private "CGRectMake"
-- !private "+"
-- !private "/"
-- !private "dispatch_async"
-- !private "print"
 - !private "dispatch_get_main_queue"
-- "EPDeckView"
-- !private "--"
-- !private "UIColor"
-- !private "NSURL"
-- !private "CGPointMake"
-- !private "&&"
-- "UIButton"
-- !private "String"
-- !private "NSUTF8StringEncoding"
-- !private ">"
+- !private "EPDeckViewAnimationManager"
 - "UIViewController"
-- !private "BooleanLiteralType"
-- !private "TestView"
-- "Int"
-- !private "<"
+- !private "NSData"
 - "Bool"
+- !private "=="
+- !private "dispatch_async"
+- !private "NSURL"
+- !private "--"
+- !private "FIRAuth"
+- !private "FIRDatabase"
+- !private "Dictionary"
+- !private "CGRectMake"
+- "CardViewDirection"
+- "EPCardView"
+- !private "BooleanLiteralType"
+- "UnicodeScalarType"
+- !private "/"
+- !private "Void"
+- !private "*"
+- !private "CGSizeMake"
+- "Array"
+- "UIActivityIndicatorView"
+- !private "print"
+- !private ">"
+- !private "CGPointMake"
+- "EPDeckView"
+- !private "+"
+- "UIButton"
+- !private "UIImage"
+- "TinderViewController"
+- "StringLiteralType"
+- !private "-"
+- !private "TestView"
+- !private "BTNavigationDropdownMenu"
+- !private "&&"
+- !private "NSUTF8StringEncoding"
+- "MFMailComposeViewControllerDelegate"
+- !private "<="
+- "EPDeckViewDataSource"
+- !private "<"
+- !private "NSString"
+- "EPDeckViewDelegate"
+- "Int"
+- "FIRDatabaseReference"
+- !private "UIColor"
+- !private "AnyObject"
+- !private "String"
 depends-member:
 - !private ["Ps9AnyObject", "BTNavigationDropdownMenu"]
 - !private ["Ps9AnyObject", "CGPointMake"]
 - !private ["Ps9AnyObject", "CGRectMake"]
 - !private ["Ps9AnyObject", "CGSizeMake"]
 - !private ["Ps9AnyObject", "EPDeckViewAnimationManager"]
+- !private ["Ps9AnyObject", "FIRAuth"]
+- !private ["Ps9AnyObject", "FIRDatabase"]
 - !private ["Ps9AnyObject", "Location"]
 - !private ["Ps9AnyObject", "NSData"]
 - !private ["Ps9AnyObject", "NSString"]
@@ -86,6 +95,7 @@ depends-member:
 - !private ["Ps9AnyObject", "actionMargin"]
 - !private ["Ps9AnyObject", "activityController"]
 - ["Ps9AnyObject", "activityIndicator"]
+- !private ["Ps9AnyObject", "auth"]
 - !private ["Ps9AnyObject", "barTintColor"]
 - !private ["Ps9AnyObject", "cancelButton"]
 - !private ["Ps9AnyObject", "cardLeftFinishPoint"]
@@ -96,10 +106,13 @@ depends-member:
 - !private ["Ps9AnyObject", "center"]
 - !private ["Ps9AnyObject", "characters"]
 - !private ["Ps9AnyObject", "checkButton"]
+- !private ["Ps9AnyObject", "child"]
 - ["Ps9AnyObject", "chosenCode"]
 - !private ["Ps9AnyObject", "componentsSeparatedByString"]
+- !private ["Ps9AnyObject", "currentUser"]
 - !private ["Ps9AnyObject", "dataSource"]
 - !private ["Ps9AnyObject", "dataTaskWithURL"]
+- !private ["Ps9AnyObject", "database"]
 - !private ["Ps9AnyObject", "deckAnchor"]
 - !private ["Ps9AnyObject", "deckAnimationDuration"]
 - !private ["Ps9AnyObject", "deckCardAlphaDelta"]
@@ -132,8 +145,11 @@ depends-member:
 - !private ["Ps9AnyObject", "navigationItem"]
 - ["Ps9AnyObject", "numberOfCards"]
 - ["Ps9AnyObject", "numberOfCardsInDeckView"]
+- !private ["Ps9AnyObject", "observeSingleEventOfType"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "profileImageView"]
+- ["Ps9AnyObject", "ref"]
+- !private ["Ps9AnyObject", "reference"]
 - !private ["Ps9AnyObject", "reloadCards"]
 - !private ["Ps9AnyObject", "resume"]
 - !private ["Ps9AnyObject", "rotationAngle"]
@@ -151,6 +167,10 @@ depends-member:
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "tintColor"]
 - !private ["Ps9AnyObject", "titleView"]
+- !private ["Ps9AnyObject", "uid"]
+- !private ["Ps9AnyObject", "updateChildValues"]
+- ["Ps9AnyObject", "updateValues"]
+- !private ["Ps9AnyObject", "value"]
 - ["Ps9AnyObject", "viewDidAppear"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - !private ["Ps9AnyObject", "whiteColor"]
@@ -182,6 +202,7 @@ depends-member:
 - !private ["Ps23ArrayLiteralConvertible", "subscript"]
 - !private ["Vs10ArraySlice", "Generator"]
 - !private ["Vs10ArraySlice", "Index"]
+- !private ["Vs10ArraySlice", "SubSequence"]
 - !private ["C24BTNavigationDropdownMenu24BTNavigationDropdownMenu", "cellBackgroundColor"]
 - !private ["C24BTNavigationDropdownMenu24BTNavigationDropdownMenu", "cellTextLabelColor"]
 - !private ["C24BTNavigationDropdownMenu24BTNavigationDropdownMenu", "didSelectItemAtIndexHandler"]
@@ -189,8 +210,10 @@ depends-member:
 - !private ["C24BTNavigationDropdownMenu24BTNavigationDropdownMenu", "menuTitleColor"]
 - !private ["Ps22BidirectionalIndexType", "Distance"]
 - !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["Ps22BidirectionalIndexType", "Stride"]
 - !private ["Ps21BitwiseOperationsType", "Distance"]
 - !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Ps21BitwiseOperationsType", "Stride"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["Sb", "deinit"]
 - !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
@@ -216,6 +239,8 @@ depends-member:
 - !private ["Ps11CVarArgType", "CGSizeMake"]
 - !private ["Ps11CVarArgType", "Distance"]
 - !private ["Ps11CVarArgType", "EPDeckViewAnimationManager"]
+- !private ["Ps11CVarArgType", "FIRAuth"]
+- !private ["Ps11CVarArgType", "FIRDatabase"]
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "Location"]
 - !private ["Ps11CVarArgType", "NSData"]
@@ -224,12 +249,14 @@ depends-member:
 - !private ["Ps11CVarArgType", "NSURLSession"]
 - !private ["Ps11CVarArgType", "NSUTF8StringEncoding"]
 - !private ["Ps11CVarArgType", "Price"]
+- !private ["Ps11CVarArgType", "Stride"]
 - !private ["Ps11CVarArgType", "String"]
 - !private ["Ps11CVarArgType", "TestView"]
 - !private ["Ps11CVarArgType", "UIColor"]
 - !private ["Ps11CVarArgType", "UIImage"]
 - !private ["Ps11CVarArgType", "activityController"]
 - ["Ps11CVarArgType", "activityIndicator"]
+- !private ["Ps11CVarArgType", "auth"]
 - !private ["Ps11CVarArgType", "barTintColor"]
 - !private ["Ps11CVarArgType", "cancelButton"]
 - ["Ps11CVarArgType", "cardViews"]
@@ -238,10 +265,13 @@ depends-member:
 - !private ["Ps11CVarArgType", "center"]
 - !private ["Ps11CVarArgType", "characters"]
 - !private ["Ps11CVarArgType", "checkButton"]
+- !private ["Ps11CVarArgType", "child"]
 - ["Ps11CVarArgType", "chosenCode"]
 - !private ["Ps11CVarArgType", "componentsSeparatedByString"]
+- !private ["Ps11CVarArgType", "currentUser"]
 - !private ["Ps11CVarArgType", "dataSource"]
 - !private ["Ps11CVarArgType", "dataTaskWithURL"]
+- !private ["Ps11CVarArgType", "database"]
 - ["Ps11CVarArgType", "deckView"]
 - !private ["Ps11CVarArgType", "deckViewAnimationManager"]
 - !private ["Ps11CVarArgType", "delegate"]
@@ -267,8 +297,11 @@ depends-member:
 - !private ["Ps11CVarArgType", "navigationItem"]
 - ["Ps11CVarArgType", "numberOfCards"]
 - ["Ps11CVarArgType", "numberOfCardsInDeckView"]
+- !private ["Ps11CVarArgType", "observeSingleEventOfType"]
 - !private ["Ps11CVarArgType", "print"]
 - !private ["Ps11CVarArgType", "profileImageView"]
+- ["Ps11CVarArgType", "ref"]
+- !private ["Ps11CVarArgType", "reference"]
 - !private ["Ps11CVarArgType", "reloadCards"]
 - !private ["Ps11CVarArgType", "resume"]
 - !private ["Ps11CVarArgType", "setHidesBackButton"]
@@ -281,6 +314,10 @@ depends-member:
 - !private ["Ps11CVarArgType", "text"]
 - !private ["Ps11CVarArgType", "tintColor"]
 - !private ["Ps11CVarArgType", "titleView"]
+- !private ["Ps11CVarArgType", "uid"]
+- !private ["Ps11CVarArgType", "updateChildValues"]
+- ["Ps11CVarArgType", "updateValues"]
+- !private ["Ps11CVarArgType", "value"]
 - ["Ps11CVarArgType", "viewDidAppear"]
 - ["Ps11CVarArgType", "viewDidLoad"]
 - !private ["Ps11CVarArgType", "whiteColor"]
@@ -298,7 +335,9 @@ depends-member:
 - ["Ps14CollectionType", "Element"]
 - !private ["Ps14CollectionType", "Generator"]
 - !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "Key"]
 - !private ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "Value"]
 - !private ["Ps14CollectionType", "_Element"]
 - !private ["Ps14CollectionType", "append"]
 - !private ["Ps14CollectionType", "count"]
@@ -310,6 +349,7 @@ depends-member:
 - !private ["Ps14CollectionType", "subscript"]
 - !private ["Ps10Comparable", "Distance"]
 - !private ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps10Comparable", "Stride"]
 - !private ["Ps10Comparable", "characters"]
 - !private ["Ps10Comparable", "componentsSeparatedByString"]
 - !private ["Ps10Comparable", "init"]
@@ -319,8 +359,11 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "CGSizeMake"]
 - !private ["Ps28CustomDebugStringConvertible", "EPDeckViewAnimationManager"]
 - ["Ps28CustomDebugStringConvertible", "Element"]
+- !private ["Ps28CustomDebugStringConvertible", "FIRAuth"]
+- !private ["Ps28CustomDebugStringConvertible", "FIRDatabase"]
 - !private ["Ps28CustomDebugStringConvertible", "Generator"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "Key"]
 - !private ["Ps28CustomDebugStringConvertible", "Location"]
 - !private ["Ps28CustomDebugStringConvertible", "NSData"]
 - !private ["Ps28CustomDebugStringConvertible", "NSString"]
@@ -328,15 +371,18 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "NSURLSession"]
 - !private ["Ps28CustomDebugStringConvertible", "NSUTF8StringEncoding"]
 - !private ["Ps28CustomDebugStringConvertible", "Price"]
+- !private ["Ps28CustomDebugStringConvertible", "Some"]
 - !private ["Ps28CustomDebugStringConvertible", "String"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "TestView"]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "UIImage"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "activityController"]
 - ["Ps28CustomDebugStringConvertible", "activityIndicator"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
+- !private ["Ps28CustomDebugStringConvertible", "auth"]
 - !private ["Ps28CustomDebugStringConvertible", "barTintColor"]
 - !private ["Ps28CustomDebugStringConvertible", "cancelButton"]
 - ["Ps28CustomDebugStringConvertible", "cardViews"]
@@ -345,11 +391,14 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "center"]
 - !private ["Ps28CustomDebugStringConvertible", "characters"]
 - !private ["Ps28CustomDebugStringConvertible", "checkButton"]
+- !private ["Ps28CustomDebugStringConvertible", "child"]
 - ["Ps28CustomDebugStringConvertible", "chosenCode"]
 - !private ["Ps28CustomDebugStringConvertible", "componentsSeparatedByString"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
+- !private ["Ps28CustomDebugStringConvertible", "currentUser"]
 - !private ["Ps28CustomDebugStringConvertible", "dataSource"]
 - !private ["Ps28CustomDebugStringConvertible", "dataTaskWithURL"]
+- !private ["Ps28CustomDebugStringConvertible", "database"]
 - ["Ps28CustomDebugStringConvertible", "deckView"]
 - !private ["Ps28CustomDebugStringConvertible", "deckViewAnimationManager"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
@@ -376,8 +425,11 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "navigationItem"]
 - ["Ps28CustomDebugStringConvertible", "numberOfCards"]
 - ["Ps28CustomDebugStringConvertible", "numberOfCardsInDeckView"]
+- !private ["Ps28CustomDebugStringConvertible", "observeSingleEventOfType"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "profileImageView"]
+- ["Ps28CustomDebugStringConvertible", "ref"]
+- !private ["Ps28CustomDebugStringConvertible", "reference"]
 - !private ["Ps28CustomDebugStringConvertible", "reloadCards"]
 - !private ["Ps28CustomDebugStringConvertible", "removeAtIndex"]
 - !private ["Ps28CustomDebugStringConvertible", "removeFirst"]
@@ -394,6 +446,10 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "tintColor"]
 - !private ["Ps28CustomDebugStringConvertible", "titleView"]
+- !private ["Ps28CustomDebugStringConvertible", "uid"]
+- !private ["Ps28CustomDebugStringConvertible", "updateChildValues"]
+- ["Ps28CustomDebugStringConvertible", "updateValues"]
+- !private ["Ps28CustomDebugStringConvertible", "value"]
 - ["Ps28CustomDebugStringConvertible", "viewDidAppear"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - !private ["Ps28CustomDebugStringConvertible", "whiteColor"]
@@ -405,9 +461,12 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Distance"]
 - !private ["Ps23CustomStringConvertible", "EPDeckViewAnimationManager"]
 - ["Ps23CustomStringConvertible", "Element"]
+- !private ["Ps23CustomStringConvertible", "FIRAuth"]
+- !private ["Ps23CustomStringConvertible", "FIRDatabase"]
 - !private ["Ps23CustomStringConvertible", "Generator"]
 - !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["Ps23CustomStringConvertible", "Key"]
 - !private ["Ps23CustomStringConvertible", "Location"]
 - !private ["Ps23CustomStringConvertible", "NSData"]
 - !private ["Ps23CustomStringConvertible", "NSString"]
@@ -415,16 +474,19 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "NSURLSession"]
 - !private ["Ps23CustomStringConvertible", "NSUTF8StringEncoding"]
 - !private ["Ps23CustomStringConvertible", "Price"]
+- !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "String"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "TestView"]
 - !private ["Ps23CustomStringConvertible", "UIColor"]
 - !private ["Ps23CustomStringConvertible", "UIImage"]
+- !private ["Ps23CustomStringConvertible", "Value"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "activityController"]
 - ["Ps23CustomStringConvertible", "activityIndicator"]
 - !private ["Ps23CustomStringConvertible", "append"]
+- !private ["Ps23CustomStringConvertible", "auth"]
 - !private ["Ps23CustomStringConvertible", "barTintColor"]
 - !private ["Ps23CustomStringConvertible", "cancelButton"]
 - ["Ps23CustomStringConvertible", "cardViews"]
@@ -433,11 +495,14 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "center"]
 - !private ["Ps23CustomStringConvertible", "characters"]
 - !private ["Ps23CustomStringConvertible", "checkButton"]
+- !private ["Ps23CustomStringConvertible", "child"]
 - ["Ps23CustomStringConvertible", "chosenCode"]
 - !private ["Ps23CustomStringConvertible", "componentsSeparatedByString"]
 - !private ["Ps23CustomStringConvertible", "count"]
+- !private ["Ps23CustomStringConvertible", "currentUser"]
 - !private ["Ps23CustomStringConvertible", "dataSource"]
 - !private ["Ps23CustomStringConvertible", "dataTaskWithURL"]
+- !private ["Ps23CustomStringConvertible", "database"]
 - ["Ps23CustomStringConvertible", "deckView"]
 - !private ["Ps23CustomStringConvertible", "deckViewAnimationManager"]
 - !private ["Ps23CustomStringConvertible", "delegate"]
@@ -464,8 +529,11 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "navigationItem"]
 - ["Ps23CustomStringConvertible", "numberOfCards"]
 - ["Ps23CustomStringConvertible", "numberOfCardsInDeckView"]
+- !private ["Ps23CustomStringConvertible", "observeSingleEventOfType"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "profileImageView"]
+- ["Ps23CustomStringConvertible", "ref"]
+- !private ["Ps23CustomStringConvertible", "reference"]
 - !private ["Ps23CustomStringConvertible", "reloadCards"]
 - !private ["Ps23CustomStringConvertible", "removeAtIndex"]
 - !private ["Ps23CustomStringConvertible", "removeFirst"]
@@ -482,10 +550,23 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "tintColor"]
 - !private ["Ps23CustomStringConvertible", "titleView"]
+- !private ["Ps23CustomStringConvertible", "uid"]
+- !private ["Ps23CustomStringConvertible", "updateChildValues"]
+- ["Ps23CustomStringConvertible", "updateValues"]
+- !private ["Ps23CustomStringConvertible", "value"]
 - ["Ps23CustomStringConvertible", "viewDidAppear"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - !private ["Ps23CustomStringConvertible", "whiteColor"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Vs10Dictionary", "Index"]
+- !private ["Vs10Dictionary", "Key"]
+- !private ["Vs10Dictionary", "Value"]
+- !private ["Vs10Dictionary", "deinit"]
+- !private ["Vs10Dictionary", "subscript"]
+- !private ["Ps28DictionaryLiteralConvertible", "Index"]
+- !private ["Ps28DictionaryLiteralConvertible", "Key"]
+- !private ["Ps28DictionaryLiteralConvertible", "Value"]
+- !private ["Ps28DictionaryLiteralConvertible", "subscript"]
 - !private ["Sd", "deinit"]
 - !private ["C10EPDeckView10EPCardView", "Location"]
 - !private ["C10EPDeckView10EPCardView", "Price"]
@@ -534,6 +615,8 @@ depends-member:
 - !private ["P10EPDeckView20EPDeckViewDataSource", "CGRectMake"]
 - !private ["P10EPDeckView20EPDeckViewDataSource", "CGSizeMake"]
 - !private ["P10EPDeckView20EPDeckViewDataSource", "EPDeckViewAnimationManager"]
+- !private ["P10EPDeckView20EPDeckViewDataSource", "FIRAuth"]
+- !private ["P10EPDeckView20EPDeckViewDataSource", "FIRDatabase"]
 - !private ["P10EPDeckView20EPDeckViewDataSource", "NSData"]
 - !private ["P10EPDeckView20EPDeckViewDataSource", "NSString"]
 - !private ["P10EPDeckView20EPDeckViewDataSource", "NSURL"]
@@ -555,6 +638,8 @@ depends-member:
 - !private ["P10EPDeckView20EPDeckViewDataSource", "numberOfCards"]
 - ["P10EPDeckView20EPDeckViewDataSource", "numberOfCardsInDeckView"]
 - !private ["P10EPDeckView20EPDeckViewDataSource", "print"]
+- !private ["P10EPDeckView20EPDeckViewDataSource", "ref"]
+- !private ["P10EPDeckView20EPDeckViewDataSource", "updateValues"]
 - !private ["P10EPDeckView20EPDeckViewDataSource", "viewDidLoad"]
 - ["P10EPDeckView20EPDeckViewDataSource", ""]
 - !private ["P10EPDeckView18EPDeckViewDelegate", "BTNavigationDropdownMenu"]
@@ -562,6 +647,8 @@ depends-member:
 - !private ["P10EPDeckView18EPDeckViewDelegate", "CGRectMake"]
 - !private ["P10EPDeckView18EPDeckViewDelegate", "CGSizeMake"]
 - !private ["P10EPDeckView18EPDeckViewDelegate", "EPDeckViewAnimationManager"]
+- !private ["P10EPDeckView18EPDeckViewDelegate", "FIRAuth"]
+- !private ["P10EPDeckView18EPDeckViewDelegate", "FIRDatabase"]
 - !private ["P10EPDeckView18EPDeckViewDelegate", "NSData"]
 - !private ["P10EPDeckView18EPDeckViewDelegate", "NSString"]
 - !private ["P10EPDeckView18EPDeckViewDelegate", "NSURL"]
@@ -583,6 +670,8 @@ depends-member:
 - !private ["P10EPDeckView18EPDeckViewDelegate", "numberOfCards"]
 - ["P10EPDeckView18EPDeckViewDelegate", "numberOfCardsInDeckView"]
 - !private ["P10EPDeckView18EPDeckViewDelegate", "print"]
+- !private ["P10EPDeckView18EPDeckViewDelegate", "ref"]
+- !private ["P10EPDeckView18EPDeckViewDelegate", "updateValues"]
 - !private ["P10EPDeckView18EPDeckViewDelegate", "viewDidLoad"]
 - ["P10EPDeckView18EPDeckViewDelegate", ""]
 - !private ["Ps9Equatable", "BTNavigationDropdownMenu"]
@@ -591,6 +680,8 @@ depends-member:
 - !private ["Ps9Equatable", "CGSizeMake"]
 - !private ["Ps9Equatable", "Distance"]
 - !private ["Ps9Equatable", "EPDeckViewAnimationManager"]
+- !private ["Ps9Equatable", "FIRAuth"]
+- !private ["Ps9Equatable", "FIRDatabase"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "Left"]
 - !private ["Ps9Equatable", "Location"]
@@ -601,14 +692,17 @@ depends-member:
 - !private ["Ps9Equatable", "NSUTF8StringEncoding"]
 - !private ["Ps9Equatable", "Price"]
 - !private ["Ps9Equatable", "Right"]
+- !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "String"]
 - !private ["Ps9Equatable", "TestView"]
 - !private ["Ps9Equatable", "TopLeft"]
 - !private ["Ps9Equatable", "UIColor"]
 - !private ["Ps9Equatable", "UIImage"]
+- !private ["Ps9Equatable", "Value"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "activityController"]
 - ["Ps9Equatable", "activityIndicator"]
+- !private ["Ps9Equatable", "auth"]
 - !private ["Ps9Equatable", "barTintColor"]
 - !private ["Ps9Equatable", "cancelButton"]
 - ["Ps9Equatable", "cardViews"]
@@ -617,10 +711,13 @@ depends-member:
 - !private ["Ps9Equatable", "center"]
 - !private ["Ps9Equatable", "characters"]
 - !private ["Ps9Equatable", "checkButton"]
+- !private ["Ps9Equatable", "child"]
 - ["Ps9Equatable", "chosenCode"]
 - !private ["Ps9Equatable", "componentsSeparatedByString"]
+- !private ["Ps9Equatable", "currentUser"]
 - !private ["Ps9Equatable", "dataSource"]
 - !private ["Ps9Equatable", "dataTaskWithURL"]
+- !private ["Ps9Equatable", "database"]
 - ["Ps9Equatable", "deckView"]
 - !private ["Ps9Equatable", "deckViewAnimationManager"]
 - !private ["Ps9Equatable", "delegate"]
@@ -648,8 +745,11 @@ depends-member:
 - !private ["Ps9Equatable", "navigationItem"]
 - ["Ps9Equatable", "numberOfCards"]
 - ["Ps9Equatable", "numberOfCardsInDeckView"]
+- !private ["Ps9Equatable", "observeSingleEventOfType"]
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "profileImageView"]
+- ["Ps9Equatable", "ref"]
+- !private ["Ps9Equatable", "reference"]
 - !private ["Ps9Equatable", "reloadCards"]
 - !private ["Ps9Equatable", "resume"]
 - !private ["Ps9Equatable", "setHidesBackButton"]
@@ -663,6 +763,10 @@ depends-member:
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "tintColor"]
 - !private ["Ps9Equatable", "titleView"]
+- !private ["Ps9Equatable", "uid"]
+- !private ["Ps9Equatable", "updateChildValues"]
+- ["Ps9Equatable", "updateValues"]
+- !private ["Ps9Equatable", "value"]
 - ["Ps9Equatable", "viewDidAppear"]
 - ["Ps9Equatable", "viewDidLoad"]
 - !private ["Ps9Equatable", "whiteColor"]
@@ -673,9 +777,24 @@ depends-member:
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "characters"]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "componentsSeparatedByString"]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["CSo7FIRAuth", "auth"]
+- !private ["CSo7FIRAuth", "currentUser"]
+- !private ["OSC16FIRDataEventType", "Value"]
+- !private ["CSo15FIRDataSnapshot", "value"]
+- !private ["CSo11FIRDatabase", "database"]
+- !private ["CSo11FIRDatabase", "reference"]
+- !private ["CSo16FIRDatabaseQuery", "child"]
+- !private ["CSo16FIRDatabaseQuery", "observeSingleEventOfType"]
+- !private ["CSo16FIRDatabaseQuery", "updateChildValues"]
+- !private ["CSo20FIRDatabaseReference", "child"]
+- !private ["CSo20FIRDatabaseReference", "observeSingleEventOfType"]
+- !private ["CSo20FIRDatabaseReference", "updateChildValues"]
+- !private ["CSo7FIRUser", "uid"]
+- !private ["PSo11FIRUserInfo", "uid"]
 - !private ["Sf", "deinit"]
 - !private ["Ps16ForwardIndexType", "Distance"]
 - !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
+- !private ["Ps16ForwardIndexType", "Stride"]
 - !private ["Ps13GeneratorType", "Element"]
 - !private ["Ps8Hashable", "BTNavigationDropdownMenu"]
 - !private ["Ps8Hashable", "CGPointMake"]
@@ -683,6 +802,8 @@ depends-member:
 - !private ["Ps8Hashable", "CGSizeMake"]
 - !private ["Ps8Hashable", "Distance"]
 - !private ["Ps8Hashable", "EPDeckViewAnimationManager"]
+- !private ["Ps8Hashable", "FIRAuth"]
+- !private ["Ps8Hashable", "FIRDatabase"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "Left"]
 - !private ["Ps8Hashable", "Location"]
@@ -693,14 +814,17 @@ depends-member:
 - !private ["Ps8Hashable", "NSUTF8StringEncoding"]
 - !private ["Ps8Hashable", "Price"]
 - !private ["Ps8Hashable", "Right"]
+- !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "String"]
 - !private ["Ps8Hashable", "TestView"]
 - !private ["Ps8Hashable", "TopLeft"]
 - !private ["Ps8Hashable", "UIColor"]
 - !private ["Ps8Hashable", "UIImage"]
+- !private ["Ps8Hashable", "Value"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "activityController"]
 - ["Ps8Hashable", "activityIndicator"]
+- !private ["Ps8Hashable", "auth"]
 - !private ["Ps8Hashable", "barTintColor"]
 - !private ["Ps8Hashable", "cancelButton"]
 - ["Ps8Hashable", "cardViews"]
@@ -709,10 +833,13 @@ depends-member:
 - !private ["Ps8Hashable", "center"]
 - !private ["Ps8Hashable", "characters"]
 - !private ["Ps8Hashable", "checkButton"]
+- !private ["Ps8Hashable", "child"]
 - ["Ps8Hashable", "chosenCode"]
 - !private ["Ps8Hashable", "componentsSeparatedByString"]
+- !private ["Ps8Hashable", "currentUser"]
 - !private ["Ps8Hashable", "dataSource"]
 - !private ["Ps8Hashable", "dataTaskWithURL"]
+- !private ["Ps8Hashable", "database"]
 - ["Ps8Hashable", "deckView"]
 - !private ["Ps8Hashable", "deckViewAnimationManager"]
 - !private ["Ps8Hashable", "delegate"]
@@ -739,8 +866,11 @@ depends-member:
 - !private ["Ps8Hashable", "navigationItem"]
 - ["Ps8Hashable", "numberOfCards"]
 - ["Ps8Hashable", "numberOfCardsInDeckView"]
+- !private ["Ps8Hashable", "observeSingleEventOfType"]
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "profileImageView"]
+- ["Ps8Hashable", "ref"]
+- !private ["Ps8Hashable", "reference"]
 - !private ["Ps8Hashable", "reloadCards"]
 - !private ["Ps8Hashable", "resume"]
 - !private ["Ps8Hashable", "setHidesBackButton"]
@@ -753,6 +883,10 @@ depends-member:
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "tintColor"]
 - !private ["Ps8Hashable", "titleView"]
+- !private ["Ps8Hashable", "uid"]
+- !private ["Ps8Hashable", "updateChildValues"]
+- ["Ps8Hashable", "updateValues"]
+- !private ["Ps8Hashable", "value"]
 - ["Ps8Hashable", "viewDidAppear"]
 - ["Ps8Hashable", "viewDidLoad"]
 - !private ["Ps8Hashable", "whiteColor"]
@@ -762,7 +896,9 @@ depends-member:
 - ["Ps9Indexable", "Element"]
 - !private ["Ps9Indexable", "Generator"]
 - !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "Key"]
 - !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "Value"]
 - !private ["Ps9Indexable", "_Element"]
 - !private ["Ps9Indexable", "append"]
 - !private ["Ps9Indexable", "count"]
@@ -775,6 +911,7 @@ depends-member:
 - !private ["Vs17IndexingGenerator", "Element"]
 - !private ["Si", "Distance"]
 - !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "Stride"]
 - !private ["Si", "deinit"]
 - !private ["Vs5Int16", "deinit"]
 - !private ["Vs5Int32", "deinit"]
@@ -782,15 +919,20 @@ depends-member:
 - !private ["Vs4Int8", "deinit"]
 - !private ["Ps21IntegerArithmeticType", "Distance"]
 - !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps21IntegerArithmeticType", "Stride"]
 - !private ["Ps25IntegerLiteralConvertible", "Distance"]
 - !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps25IntegerLiteralConvertible", "Stride"]
 - !private ["Ps11IntegerType", "Distance"]
 - !private ["Ps11IntegerType", "IntegerLiteralType"]
+- !private ["Ps11IntegerType", "Stride"]
 - !private ["PSo35MFMailComposeViewControllerDelegate", "BTNavigationDropdownMenu"]
 - !private ["PSo35MFMailComposeViewControllerDelegate", "CGPointMake"]
 - !private ["PSo35MFMailComposeViewControllerDelegate", "CGRectMake"]
 - !private ["PSo35MFMailComposeViewControllerDelegate", "CGSizeMake"]
 - !private ["PSo35MFMailComposeViewControllerDelegate", "EPDeckViewAnimationManager"]
+- !private ["PSo35MFMailComposeViewControllerDelegate", "FIRAuth"]
+- !private ["PSo35MFMailComposeViewControllerDelegate", "FIRDatabase"]
 - !private ["PSo35MFMailComposeViewControllerDelegate", "NSData"]
 - !private ["PSo35MFMailComposeViewControllerDelegate", "NSString"]
 - !private ["PSo35MFMailComposeViewControllerDelegate", "NSURL"]
@@ -812,10 +954,13 @@ depends-member:
 - !private ["PSo35MFMailComposeViewControllerDelegate", "numberOfCards"]
 - ["PSo35MFMailComposeViewControllerDelegate", "numberOfCardsInDeckView"]
 - !private ["PSo35MFMailComposeViewControllerDelegate", "print"]
+- !private ["PSo35MFMailComposeViewControllerDelegate", "ref"]
+- !private ["PSo35MFMailComposeViewControllerDelegate", "updateValues"]
 - !private ["PSo35MFMailComposeViewControllerDelegate", "viewDidLoad"]
 - ["PSo35MFMailComposeViewControllerDelegate", ""]
 - !private ["Ps14MirrorPathType", "Distance"]
 - !private ["Ps14MirrorPathType", "IntegerLiteralType"]
+- !private ["Ps14MirrorPathType", "Stride"]
 - !private ["Ps14MirrorPathType", "characters"]
 - !private ["Ps14MirrorPathType", "componentsSeparatedByString"]
 - !private ["Ps14MirrorPathType", "init"]
@@ -860,6 +1005,8 @@ depends-member:
 - !private ["PSo8NSCoding", "CGRectMake"]
 - !private ["PSo8NSCoding", "CGSizeMake"]
 - !private ["PSo8NSCoding", "EPDeckViewAnimationManager"]
+- !private ["PSo8NSCoding", "FIRAuth"]
+- !private ["PSo8NSCoding", "FIRDatabase"]
 - !private ["PSo8NSCoding", "Location"]
 - !private ["PSo8NSCoding", "NSData"]
 - !private ["PSo8NSCoding", "NSString"]
@@ -911,6 +1058,7 @@ depends-member:
 - ["PSo8NSCoding", "numberOfCardsInDeckView"]
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "profileImageView"]
+- ["PSo8NSCoding", "ref"]
 - !private ["PSo8NSCoding", "reloadCards"]
 - !private ["PSo8NSCoding", "setHidesBackButton"]
 - !private ["PSo8NSCoding", "shadowOffset"]
@@ -921,6 +1069,7 @@ depends-member:
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "tintColor"]
 - !private ["PSo8NSCoding", "titleView"]
+- ["PSo8NSCoding", "updateValues"]
 - ["PSo8NSCoding", "viewDidAppear"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - !private ["PSo8NSCoding", "whiteColor"]
@@ -936,6 +1085,8 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "CGRectMake"]
 - !private ["PSo26NSExtensionRequestHandling", "CGSizeMake"]
 - !private ["PSo26NSExtensionRequestHandling", "EPDeckViewAnimationManager"]
+- !private ["PSo26NSExtensionRequestHandling", "FIRAuth"]
+- !private ["PSo26NSExtensionRequestHandling", "FIRDatabase"]
 - !private ["PSo26NSExtensionRequestHandling", "NSData"]
 - !private ["PSo26NSExtensionRequestHandling", "NSString"]
 - !private ["PSo26NSExtensionRequestHandling", "NSURL"]
@@ -961,12 +1112,15 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "numberOfCards"]
 - ["PSo26NSExtensionRequestHandling", "numberOfCardsInDeckView"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
+- ["PSo26NSExtensionRequestHandling", "ref"]
+- ["PSo26NSExtensionRequestHandling", "updateValues"]
 - ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo16NSMutableCopying", "characters"]
 - !private ["PSo16NSMutableCopying", "componentsSeparatedByString"]
 - !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "AnyObject"]
 - !private ["CSo8NSObject", "BTNavigationDropdownMenu"]
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "CGPointMake"]
@@ -976,6 +1130,9 @@ depends-member:
 - ["CSo8NSObject", "EPCardView"]
 - ["CSo8NSObject", "EPDeckView"]
 - !private ["CSo8NSObject", "EPDeckViewAnimationManager"]
+- !private ["CSo8NSObject", "FIRAuth"]
+- !private ["CSo8NSObject", "FIRDatabase"]
+- ["CSo8NSObject", "FIRDatabaseReference"]
 - ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "Location"]
 - !private ["CSo8NSObject", "NSData"]
@@ -993,6 +1150,7 @@ depends-member:
 - !private ["CSo8NSObject", "Void"]
 - !private ["CSo8NSObject", "activityController"]
 - ["CSo8NSObject", "activityIndicator"]
+- !private ["CSo8NSObject", "auth"]
 - !private ["CSo8NSObject", "barTintColor"]
 - !private ["CSo8NSObject", "cancelButton"]
 - ["CSo8NSObject", "cardViews"]
@@ -1001,12 +1159,16 @@ depends-member:
 - !private ["CSo8NSObject", "center"]
 - !private ["CSo8NSObject", "characters"]
 - !private ["CSo8NSObject", "checkButton"]
+- !private ["CSo8NSObject", "child"]
 - ["CSo8NSObject", "chosenCode"]
 - !private ["CSo8NSObject", "componentsSeparatedByString"]
+- !private ["CSo8NSObject", "currentUser"]
 - !private ["CSo8NSObject", "dataSource"]
 - !private ["CSo8NSObject", "dataTaskWithURL"]
+- !private ["CSo8NSObject", "database"]
 - ["CSo8NSObject", "deckView"]
 - !private ["CSo8NSObject", "deckViewAnimationManager"]
+- !private ["CSo8NSObject", "deinit"]
 - !private ["CSo8NSObject", "delegate"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - !private ["CSo8NSObject", "didSelectItemAtIndexHandler"]
@@ -1030,8 +1192,11 @@ depends-member:
 - !private ["CSo8NSObject", "navigationItem"]
 - ["CSo8NSObject", "numberOfCards"]
 - ["CSo8NSObject", "numberOfCardsInDeckView"]
+- !private ["CSo8NSObject", "observeSingleEventOfType"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "profileImageView"]
+- ["CSo8NSObject", "ref"]
+- !private ["CSo8NSObject", "reference"]
 - !private ["CSo8NSObject", "reloadCards"]
 - !private ["CSo8NSObject", "resume"]
 - !private ["CSo8NSObject", "setHidesBackButton"]
@@ -1044,6 +1209,10 @@ depends-member:
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "tintColor"]
 - !private ["CSo8NSObject", "titleView"]
+- !private ["CSo8NSObject", "uid"]
+- !private ["CSo8NSObject", "updateChildValues"]
+- ["CSo8NSObject", "updateValues"]
+- !private ["CSo8NSObject", "value"]
 - ["CSo8NSObject", "viewDidAppear"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["CSo8NSObject", "whiteColor"]
@@ -1052,6 +1221,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "CGRectMake"]
 - !private ["PSo16NSObjectProtocol", "CGSizeMake"]
 - !private ["PSo16NSObjectProtocol", "EPDeckViewAnimationManager"]
+- !private ["PSo16NSObjectProtocol", "FIRAuth"]
+- !private ["PSo16NSObjectProtocol", "FIRDatabase"]
 - !private ["PSo16NSObjectProtocol", "Location"]
 - !private ["PSo16NSObjectProtocol", "NSData"]
 - !private ["PSo16NSObjectProtocol", "NSString"]
@@ -1065,6 +1236,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIImage"]
 - !private ["PSo16NSObjectProtocol", "activityController"]
 - ["PSo16NSObjectProtocol", "activityIndicator"]
+- !private ["PSo16NSObjectProtocol", "auth"]
 - !private ["PSo16NSObjectProtocol", "barTintColor"]
 - !private ["PSo16NSObjectProtocol", "cancelButton"]
 - ["PSo16NSObjectProtocol", "cardViews"]
@@ -1073,10 +1245,13 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "center"]
 - !private ["PSo16NSObjectProtocol", "characters"]
 - !private ["PSo16NSObjectProtocol", "checkButton"]
+- !private ["PSo16NSObjectProtocol", "child"]
 - ["PSo16NSObjectProtocol", "chosenCode"]
 - !private ["PSo16NSObjectProtocol", "componentsSeparatedByString"]
+- !private ["PSo16NSObjectProtocol", "currentUser"]
 - !private ["PSo16NSObjectProtocol", "dataSource"]
 - !private ["PSo16NSObjectProtocol", "dataTaskWithURL"]
+- !private ["PSo16NSObjectProtocol", "database"]
 - ["PSo16NSObjectProtocol", "deckView"]
 - !private ["PSo16NSObjectProtocol", "deckViewAnimationManager"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
@@ -1102,8 +1277,11 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "navigationItem"]
 - ["PSo16NSObjectProtocol", "numberOfCards"]
 - ["PSo16NSObjectProtocol", "numberOfCardsInDeckView"]
+- !private ["PSo16NSObjectProtocol", "observeSingleEventOfType"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "profileImageView"]
+- ["PSo16NSObjectProtocol", "ref"]
+- !private ["PSo16NSObjectProtocol", "reference"]
 - !private ["PSo16NSObjectProtocol", "reloadCards"]
 - !private ["PSo16NSObjectProtocol", "resume"]
 - !private ["PSo16NSObjectProtocol", "setHidesBackButton"]
@@ -1116,6 +1294,10 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "tintColor"]
 - !private ["PSo16NSObjectProtocol", "titleView"]
+- !private ["PSo16NSObjectProtocol", "uid"]
+- !private ["PSo16NSObjectProtocol", "updateChildValues"]
+- ["PSo16NSObjectProtocol", "updateValues"]
+- !private ["PSo16NSObjectProtocol", "value"]
 - ["PSo16NSObjectProtocol", "viewDidAppear"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "whiteColor"]
@@ -1133,12 +1315,16 @@ depends-member:
 - !private ["CSo12NSURLSession", "sharedSession"]
 - !private ["CSo20NSURLSessionDataTask", "resume"]
 - !private ["CSo16NSURLSessionTask", "resume"]
+- !private ["Ps21NilLiteralConvertible", "Some"]
+- !private ["Sq", "Some"]
 - !private ["Sq", "deinit"]
 - !private ["Ps16OutputStreamType", "characters"]
 - !private ["Ps16OutputStreamType", "componentsSeparatedByString"]
 - !private ["Ps16OutputStreamType", "init"]
 - !private ["Ps21RandomAccessIndexType", "Distance"]
 - !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["Ps21RandomAccessIndexType", "Stride"]
+- !private ["Vs5Range", "deinit"]
 - ["Ps30RangeReplaceableCollectionType", "Element"]
 - !private ["Ps30RangeReplaceableCollectionType", "Generator"]
 - !private ["Ps30RangeReplaceableCollectionType", "Index"]
@@ -1154,11 +1340,14 @@ depends-member:
 - !private ["Ps30RangeReplaceableCollectionType", "subscript"]
 - !private ["Ps16RawRepresentable", "Left"]
 - !private ["Ps16RawRepresentable", "Right"]
+- !private ["Ps16RawRepresentable", "Value"]
 - !private ["Ps16RawRepresentable", "description"]
 - ["Ps12SequenceType", "Element"]
 - !private ["Ps12SequenceType", "Generator"]
 - !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "Key"]
 - !private ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "Value"]
 - !private ["Ps12SequenceType", "_Element"]
 - !private ["Ps12SequenceType", "append"]
 - !private ["Ps12SequenceType", "count"]
@@ -1170,8 +1359,10 @@ depends-member:
 - !private ["Ps12SequenceType", "subscript"]
 - !private ["Ps17SignedIntegerType", "Distance"]
 - !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps17SignedIntegerType", "Stride"]
 - !private ["Ps16SignedNumberType", "Distance"]
 - !private ["Ps16SignedNumberType", "IntegerLiteralType"]
+- !private ["Ps16SignedNumberType", "Stride"]
 - !private ["Vs5Slice", "Generator"]
 - !private ["Vs5Slice", "Index"]
 - !private ["Vs5Slice", "SubSequence"]
@@ -1181,9 +1372,9 @@ depends-member:
 - !private ["Ps10Streamable", "init"]
 - !private ["Ps10Strideable", "Distance"]
 - !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["Ps10Strideable", "Stride"]
 - !private ["SS", "characters"]
 - !private ["SS", "componentsSeparatedByString"]
-- !private ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["Ps30StringInterpolationConvertible", "characters"]
 - !private ["Ps30StringInterpolationConvertible", "componentsSeparatedByString"]
@@ -1202,6 +1393,7 @@ depends-member:
 - !private ["C7Poochie8TestView", "init"]
 - !private ["C7Poochie8TestView", "layer"]
 - !private ["C7Poochie8TestView", "profileImageView"]
+- !private ["C7Poochie20TinderViewController", "AnyObject"]
 - !private ["C7Poochie20TinderViewController", "BTNavigationDropdownMenu"]
 - ["C7Poochie20TinderViewController", "Bool"]
 - !private ["C7Poochie20TinderViewController", "CGPointMake"]
@@ -1211,6 +1403,9 @@ depends-member:
 - ["C7Poochie20TinderViewController", "EPCardView"]
 - ["C7Poochie20TinderViewController", "EPDeckView"]
 - !private ["C7Poochie20TinderViewController", "EPDeckViewAnimationManager"]
+- !private ["C7Poochie20TinderViewController", "FIRAuth"]
+- !private ["C7Poochie20TinderViewController", "FIRDatabase"]
+- ["C7Poochie20TinderViewController", "FIRDatabaseReference"]
 - ["C7Poochie20TinderViewController", "Int"]
 - !private ["C7Poochie20TinderViewController", "NSData"]
 - !private ["C7Poochie20TinderViewController", "NSString"]
@@ -1240,6 +1435,8 @@ depends-member:
 - ["C7Poochie20TinderViewController", "numberOfCards"]
 - ["C7Poochie20TinderViewController", "numberOfCardsInDeckView"]
 - !private ["C7Poochie20TinderViewController", "print"]
+- ["C7Poochie20TinderViewController", "ref"]
+- ["C7Poochie20TinderViewController", "updateValues"]
 - ["C7Poochie20TinderViewController", "viewDidAppear"]
 - ["C7Poochie20TinderViewController", "viewDidLoad"]
 - !private ["PSo29UIAccessibilityIdentification", "Location"]
@@ -1311,6 +1508,8 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "CGRectMake"]
 - !private ["PSo21UIAppearanceContainer", "CGSizeMake"]
 - !private ["PSo21UIAppearanceContainer", "EPDeckViewAnimationManager"]
+- !private ["PSo21UIAppearanceContainer", "FIRAuth"]
+- !private ["PSo21UIAppearanceContainer", "FIRDatabase"]
 - !private ["PSo21UIAppearanceContainer", "Location"]
 - !private ["PSo21UIAppearanceContainer", "NSData"]
 - !private ["PSo21UIAppearanceContainer", "NSString"]
@@ -1359,11 +1558,13 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "numberOfCardsInDeckView"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "profileImageView"]
+- ["PSo21UIAppearanceContainer", "ref"]
 - !private ["PSo21UIAppearanceContainer", "reloadCards"]
 - !private ["PSo21UIAppearanceContainer", "startAnimating"]
 - !private ["PSo21UIAppearanceContainer", "stopAnimating"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "tintColor"]
+- ["PSo21UIAppearanceContainer", "updateValues"]
 - ["PSo21UIAppearanceContainer", "viewDidAppear"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
@@ -1375,6 +1576,8 @@ depends-member:
 - !private ["PSo18UIContentContainer", "CGRectMake"]
 - !private ["PSo18UIContentContainer", "CGSizeMake"]
 - !private ["PSo18UIContentContainer", "EPDeckViewAnimationManager"]
+- !private ["PSo18UIContentContainer", "FIRAuth"]
+- !private ["PSo18UIContentContainer", "FIRDatabase"]
 - !private ["PSo18UIContentContainer", "NSData"]
 - !private ["PSo18UIContentContainer", "NSString"]
 - !private ["PSo18UIContentContainer", "NSURL"]
@@ -1400,6 +1603,8 @@ depends-member:
 - ["PSo18UIContentContainer", "numberOfCards"]
 - ["PSo18UIContentContainer", "numberOfCardsInDeckView"]
 - !private ["PSo18UIContentContainer", "print"]
+- ["PSo18UIContentContainer", "ref"]
+- ["PSo18UIContentContainer", "updateValues"]
 - ["PSo18UIContentContainer", "viewDidAppear"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
@@ -1466,6 +1671,8 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "CGRectMake"]
 - !private ["PSo18UIFocusEnvironment", "CGSizeMake"]
 - !private ["PSo18UIFocusEnvironment", "EPDeckViewAnimationManager"]
+- !private ["PSo18UIFocusEnvironment", "FIRAuth"]
+- !private ["PSo18UIFocusEnvironment", "FIRDatabase"]
 - !private ["PSo18UIFocusEnvironment", "Location"]
 - !private ["PSo18UIFocusEnvironment", "NSData"]
 - !private ["PSo18UIFocusEnvironment", "NSString"]
@@ -1514,11 +1721,13 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "numberOfCardsInDeckView"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "profileImageView"]
+- ["PSo18UIFocusEnvironment", "ref"]
 - !private ["PSo18UIFocusEnvironment", "reloadCards"]
 - !private ["PSo18UIFocusEnvironment", "startAnimating"]
 - !private ["PSo18UIFocusEnvironment", "stopAnimating"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "tintColor"]
+- ["PSo18UIFocusEnvironment", "updateValues"]
 - ["PSo18UIFocusEnvironment", "viewDidAppear"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
@@ -1529,6 +1738,7 @@ depends-member:
 - !private ["CSo22UINavigationController", "navigationBar"]
 - !private ["CSo16UINavigationItem", "setHidesBackButton"]
 - !private ["CSo16UINavigationItem", "titleView"]
+- !private ["CSo11UIResponder", "AnyObject"]
 - !private ["CSo11UIResponder", "BTNavigationDropdownMenu"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "CGPointMake"]
@@ -1538,6 +1748,9 @@ depends-member:
 - ["CSo11UIResponder", "EPCardView"]
 - ["CSo11UIResponder", "EPDeckView"]
 - !private ["CSo11UIResponder", "EPDeckViewAnimationManager"]
+- !private ["CSo11UIResponder", "FIRAuth"]
+- !private ["CSo11UIResponder", "FIRDatabase"]
+- ["CSo11UIResponder", "FIRDatabaseReference"]
 - ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "Location"]
 - !private ["CSo11UIResponder", "NSData"]
@@ -1590,11 +1803,13 @@ depends-member:
 - ["CSo11UIResponder", "numberOfCardsInDeckView"]
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "profileImageView"]
+- ["CSo11UIResponder", "ref"]
 - !private ["CSo11UIResponder", "reloadCards"]
 - !private ["CSo11UIResponder", "startAnimating"]
 - !private ["CSo11UIResponder", "stopAnimating"]
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "tintColor"]
+- ["CSo11UIResponder", "updateValues"]
 - ["CSo11UIResponder", "viewDidAppear"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["PSo16UIStateRestoring", "BTNavigationDropdownMenu"]
@@ -1602,6 +1817,8 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "CGRectMake"]
 - !private ["PSo16UIStateRestoring", "CGSizeMake"]
 - !private ["PSo16UIStateRestoring", "EPDeckViewAnimationManager"]
+- !private ["PSo16UIStateRestoring", "FIRAuth"]
+- !private ["PSo16UIStateRestoring", "FIRDatabase"]
 - !private ["PSo16UIStateRestoring", "NSData"]
 - !private ["PSo16UIStateRestoring", "NSString"]
 - !private ["PSo16UIStateRestoring", "NSURL"]
@@ -1627,6 +1844,8 @@ depends-member:
 - ["PSo16UIStateRestoring", "numberOfCards"]
 - ["PSo16UIStateRestoring", "numberOfCardsInDeckView"]
 - !private ["PSo16UIStateRestoring", "print"]
+- ["PSo16UIStateRestoring", "ref"]
+- ["PSo16UIStateRestoring", "updateValues"]
 - ["PSo16UIStateRestoring", "viewDidAppear"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
@@ -1635,6 +1854,8 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "CGRectMake"]
 - !private ["PSo18UITraitEnvironment", "CGSizeMake"]
 - !private ["PSo18UITraitEnvironment", "EPDeckViewAnimationManager"]
+- !private ["PSo18UITraitEnvironment", "FIRAuth"]
+- !private ["PSo18UITraitEnvironment", "FIRDatabase"]
 - !private ["PSo18UITraitEnvironment", "Location"]
 - !private ["PSo18UITraitEnvironment", "NSData"]
 - !private ["PSo18UITraitEnvironment", "NSString"]
@@ -1683,11 +1904,13 @@ depends-member:
 - ["PSo18UITraitEnvironment", "numberOfCardsInDeckView"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "profileImageView"]
+- ["PSo18UITraitEnvironment", "ref"]
 - !private ["PSo18UITraitEnvironment", "reloadCards"]
 - !private ["PSo18UITraitEnvironment", "startAnimating"]
 - !private ["PSo18UITraitEnvironment", "stopAnimating"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "tintColor"]
+- ["PSo18UITraitEnvironment", "updateValues"]
 - ["PSo18UITraitEnvironment", "viewDidAppear"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
@@ -1720,6 +1943,7 @@ depends-member:
 - !private ["CSo6UIView", "stopAnimating"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "tintColor"]
+- !private ["CSo16UIViewController", "AnyObject"]
 - !private ["CSo16UIViewController", "BTNavigationDropdownMenu"]
 - ["CSo16UIViewController", "Bool"]
 - !private ["CSo16UIViewController", "CGPointMake"]
@@ -1729,6 +1953,9 @@ depends-member:
 - ["CSo16UIViewController", "EPCardView"]
 - ["CSo16UIViewController", "EPDeckView"]
 - !private ["CSo16UIViewController", "EPDeckViewAnimationManager"]
+- !private ["CSo16UIViewController", "FIRAuth"]
+- !private ["CSo16UIViewController", "FIRDatabase"]
+- ["CSo16UIViewController", "FIRDatabaseReference"]
 - ["CSo16UIViewController", "Int"]
 - !private ["CSo16UIViewController", "NSData"]
 - !private ["CSo16UIViewController", "NSString"]
@@ -1758,6 +1985,8 @@ depends-member:
 - ["CSo16UIViewController", "numberOfCards"]
 - ["CSo16UIViewController", "numberOfCardsInDeckView"]
 - !private ["CSo16UIViewController", "print"]
+- ["CSo16UIViewController", "ref"]
+- ["CSo16UIViewController", "updateValues"]
 - ["CSo16UIViewController", "viewDidAppear"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
@@ -1770,6 +1999,8 @@ depends-member:
 - !private ["Ps31UnicodeScalarLiteralConvertible", "characters"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "componentsSeparatedByString"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["Sp", "deinit"]
+- !private ["SP", "deinit"]
 - ["Ps10_ArrayType", "Element"]
 - !private ["Ps10_ArrayType", "Generator"]
 - !private ["Ps10_ArrayType", "Index"]
@@ -1788,6 +2019,7 @@ depends-member:
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "Stride"]
 - !private ["Ps32_BuiltinStringLiteralConvertible", "characters"]
 - !private ["Ps32_BuiltinStringLiteralConvertible", "componentsSeparatedByString"]
 - !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
@@ -1815,16 +2047,22 @@ depends-member:
 - !private ["Ps24_ImageLiteralConvertible", "init"]
 - !private ["Ps14_Incrementable", "Distance"]
 - !private ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps14_Incrementable", "Stride"]
 - !private ["Ps22_IntegerArithmeticType", "Distance"]
 - !private ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps22_IntegerArithmeticType", "Stride"]
 - !private ["Ps12_IntegerType", "Distance"]
 - !private ["Ps12_IntegerType", "IntegerLiteralType"]
+- !private ["Ps12_IntegerType", "Stride"]
 - !private ["Ps21_ObjectiveCBridgeable", "Distance"]
 - ["Ps21_ObjectiveCBridgeable", "Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "Generator"]
 - !private ["Ps21_ObjectiveCBridgeable", "Index"]
 - !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Key"]
+- !private ["Ps21_ObjectiveCBridgeable", "Stride"]
 - !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "Value"]
 - !private ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "append"]
@@ -1840,14 +2078,19 @@ depends-member:
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps22_RandomAccessAmbiguity", "Distance"]
 - !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["Ps22_RandomAccessAmbiguity", "Stride"]
 - !private ["Ps12_Reflectable", "Distance"]
 - ["Ps12_Reflectable", "Element"]
 - !private ["Ps12_Reflectable", "Generator"]
 - !private ["Ps12_Reflectable", "Index"]
 - !private ["Ps12_Reflectable", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "Key"]
 - !private ["Ps12_Reflectable", "Location"]
 - !private ["Ps12_Reflectable", "Price"]
+- !private ["Ps12_Reflectable", "Some"]
+- !private ["Ps12_Reflectable", "Stride"]
 - !private ["Ps12_Reflectable", "SubSequence"]
+- !private ["Ps12_Reflectable", "Value"]
 - !private ["Ps12_Reflectable", "_Element"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["Ps12_Reflectable", "activityController"]
@@ -1893,6 +2136,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "y"]
 - !private ["Ps18_SignedIntegerType", "Distance"]
 - !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps18_SignedIntegerType", "Stride"]
 depends-nominal:
 - "Ps9AnyObject"
 - "Sa"
@@ -1918,6 +2162,8 @@ depends-nominal:
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
+- !private "Ps28DictionaryLiteralConvertible"
 - !private "Sd"
 - !private "C10EPDeckView10EPCardView"
 - !private "P10EPDeckView18EPCardViewDelegate"
@@ -1928,6 +2174,14 @@ depends-nominal:
 - "P10EPDeckView18EPDeckViewDelegate"
 - "Ps9Equatable"
 - !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "CSo7FIRAuth"
+- !private "OSC16FIRDataEventType"
+- !private "CSo15FIRDataSnapshot"
+- !private "CSo11FIRDatabase"
+- !private "CSo16FIRDatabaseQuery"
+- !private "CSo20FIRDatabaseReference"
+- !private "CSo7FIRUser"
+- !private "PSo11FIRUserInfo"
 - !private "Sf"
 - !private "Ps16ForwardIndexType"
 - !private "Ps13GeneratorType"
@@ -1962,9 +2216,11 @@ depends-nominal:
 - !private "CSo12NSURLSession"
 - !private "CSo20NSURLSessionDataTask"
 - !private "CSo16NSURLSessionTask"
+- !private "Ps21NilLiteralConvertible"
 - !private "Sq"
 - !private "Ps16OutputStreamType"
 - !private "Ps21RandomAccessIndexType"
+- !private "Vs5Range"
 - "Ps30RangeReplaceableCollectionType"
 - !private "Ps16RawRepresentable"
 - "Ps12SequenceType"
@@ -2006,6 +2262,8 @@ depends-nominal:
 - !private "Vs5UInt8"
 - !private "Sc"
 - !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "Sp"
+- !private "SP"
 - "Ps10_ArrayType"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"
 - !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
@@ -2085,4 +2343,4 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Products/Debug-iphonesimulator/BTNavigationDropdownMenu/BTNavigationDropdownMenu.framework/Headers/BTNavigationDropdownMenu-Swift.h"
 - "/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Products/Debug-iphonesimulator/BTNavigationDropdownMenu/BTNavigationDropdownMenu.framework/Headers/BTNavigationDropdownMenu-umbrella.h"
 - "/Users/Avinash/Documents/Code/Poochie/Poochie/DerivedData/Poochie/Build/Products/Debug-iphonesimulator/BTNavigationDropdownMenu/BTNavigationDropdownMenu.framework/Modules/module.modulemap"
-interface-hash: "f4a3ef357ada22dff9a448013ba94407"
+interface-hash: "aff2d111ad8b230ef9758ea244e8cfc4"

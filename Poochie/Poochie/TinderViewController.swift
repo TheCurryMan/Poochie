@@ -8,6 +8,8 @@ import UIKit
 import EPDeckView
 import MessageUI
 import BTNavigationDropdownMenu
+import Firebase
+
 class TinderViewController: UIViewController, EPDeckViewDataSource, EPDeckViewDelegate, MFMailComposeViewControllerDelegate {
     
     private var cardViews: [EPCardView] = []
@@ -18,11 +20,11 @@ class TinderViewController: UIViewController, EPDeckViewDataSource, EPDeckViewDe
      var finalData = [[""]]
     
     var chosenCode = "sss"
-    
+    var ref: FIRDatabaseReference!
     //  MARK: - INITIALIZATION
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        ref = FIRDatabase.database().reference()
         
         let dataCodes = ["sss","ata","ppa","ara","pta","baa","bar","haa","bia","boo","bka","bfa","cta","ema","moa","cla","cba","sya","ela","gra","fua","gms","foa","hsa","wan","jwa","maa","mca","msa","pha","rva","sga","tia","tla","taa","vga"]
  
@@ -213,11 +215,11 @@ class TinderViewController: UIViewController, EPDeckViewDataSource, EPDeckViewDe
         if finalData.count > 1 && finalData[index].count == 5{
             testView.activityController.stopAnimating()
             testView.activityController.hidden = true
-            print("INDEX = " + String(index))
+            //print("INDEX = " + String(index))
             
             
             var data = finalData[index]
-            print(data)
+            //print(data)
             var url = data[0]
             var ids = data[1]
             var money = data[2]
@@ -230,13 +232,13 @@ class TinderViewController: UIViewController, EPDeckViewDataSource, EPDeckViewDe
             testView.Price.text = money
             
             var arrs = ids.componentsSeparatedByString(",")
-            print(arrs)
+            //print(arrs)
             var finalId = arrs[0]
             finalId = String(finalId.characters.dropFirst())
             finalId = String(finalId.characters.dropFirst())
-            print(finalId)
+            //print(finalId)
             var photoURL = "http://images.craigslist.org/\(finalId)_300x300.jpg"
-            print(photoURL)
+            //print(photoURL)
             
             testView.profileImageView.image = UIImage(data: NSData(contentsOfURL: NSURL(string: "\(photoURL)")!)!)
             
@@ -246,7 +248,7 @@ class TinderViewController: UIViewController, EPDeckViewDataSource, EPDeckViewDe
         
         
         else if finalData.count < 2 {
-            print("LESS THAN TWO BEING ADDED")
+            //print("LESS THAN TWO BEING ADDED")
             self.cardViews.append(testView)
             if testView.activityController.isAnimating() == false {
             testView.activityController.tintColor = UIColor.whiteColor()
@@ -260,7 +262,7 @@ class TinderViewController: UIViewController, EPDeckViewDataSource, EPDeckViewDe
                 testView.Location.text = ""
                 testView.Price.text = ""
                 testView.activityController.hidden = true
-                print("finished")
+                //print("finished")
             
         }
         //  Keep a reference so you can pass the nib's buttons to the delegate functions.
@@ -281,13 +283,53 @@ class TinderViewController: UIViewController, EPDeckViewDataSource, EPDeckViewDe
     
     func deckView(deckView: EPDeckView, cardAtIndex index: Int, movedToDirection direction: CardViewDirection) {
             numberOfCards--
-            print("Card at index \(index) moved to \(direction.description()).")
-            print("Array: \(finalData)")
+            //print("Card at index \(index) moved to \(direction.description()).")
+        
+        var total : Int!
+        if direction.description() == ".Right" {
+            
+            ref.child("users").child((FIRAuth.auth()?.currentUser?.uid)!).observeSingleEventOfType(.Value, withBlock: { (snapshot) in
+                print(snapshot.value)
+                
+                if let y = snapshot.value as? [String:AnyObject] {
+                
+                let postDict = snapshot.value as! [String : AnyObject]
+                
+                if let obj =  postDict["totalitems"] as? Int {
+                    total = obj}
+                else {
+                    total = 0
+                }
+                
+                
+                self.updateValues(total, index: index)
+                
+                }
+                
+                else {
+                    total = 0
+                    self.updateValues(total, index: index)
+                }
+                // ...
+            })
+            
+            
+            
+            
+        }
+            //print("Array: \(finalData)")
         if(numberOfCards <= 0){
             self.deckView.reloadCards()
             numberOfCards = 5
         }
 
+    }
+    
+    func updateValues(total:Int, index:Int) {
+    
+        print(self.finalData[index-1])
+        var dat = self.finalData[index-1]
+        self.ref.child("users").child((FIRAuth.auth()?.currentUser?.uid)!).updateChildValues(["\(total)": dat, "totalitems":total+1])
     }
     
     func deckView(deckView: EPDeckView, didTapLeftButtonAtIndex index: Int) {

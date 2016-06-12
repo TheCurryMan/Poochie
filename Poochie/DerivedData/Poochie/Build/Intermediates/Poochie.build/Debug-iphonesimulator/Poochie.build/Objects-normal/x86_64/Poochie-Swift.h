@@ -143,6 +143,15 @@ SWIFT_CLASS("_TtC7Poochie19LoginViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC7Poochie19SavedViewController")
+@interface SavedViewController : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class FIRDatabaseReference;
 
 SWIFT_CLASS("_TtC7Poochie20SignUpViewController")
@@ -190,6 +199,7 @@ SWIFT_CLASS("_TtC7Poochie20TinderViewController")
 @property (nonatomic, weak) IBOutlet UIActivityIndicatorView * _Null_unspecified activityIndicator;
 @property (nonatomic, copy) NSArray<NSArray<NSString *> *> * _Nonnull finalData;
 @property (nonatomic, copy) NSString * _Nonnull chosenCode;
+@property (nonatomic, strong) FIRDatabaseReference * _Null_unspecified ref;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
@@ -198,6 +208,7 @@ SWIFT_CLASS("_TtC7Poochie20TinderViewController")
 - (UIButton * _Nullable)deckView:(EPDeckView * _Nonnull)deckView rightButtonForCardAtIndex:(NSInteger)index;
 - (UIButton * _Nullable)deckView:(EPDeckView * _Nonnull)deckView leftButtonForCardAtIndex:(NSInteger)index;
 - (void)deckView:(EPDeckView * _Nonnull)deckView cardAtIndex:(NSInteger)index movedToDirection:(enum CardViewDirection)direction;
+- (void)updateValues:(NSInteger)total index:(NSInteger)index;
 - (void)deckView:(EPDeckView * _Nonnull)deckView didTapLeftButtonAtIndex:(NSInteger)index;
 - (void)deckView:(EPDeckView * _Nonnull)deckView didTapRightButtonAtIndex:(NSInteger)index;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

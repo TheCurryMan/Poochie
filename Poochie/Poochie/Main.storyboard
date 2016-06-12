@@ -251,6 +251,9 @@
                     <navigationItem key="navigationItem" id="8G5-hI-b8n">
                         <barButtonItem key="leftBarButtonItem" title="Saved" style="plain" id="NY2-eY-cJM">
                             <color key="tintColor" red="0.75294117650000003" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="IQf-Zq-VXN" kind="push" id="I0X-SO-GhU"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="pGT-3h-3t7">
                             <color key="tintColor" red="0.75294117650000003" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -263,6 +266,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nmm-kb-hGR" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1098" y="1018"/>
+        </scene>
+        <!--Saved-->
+        <scene sceneID="DaV-CR-N4F">
+            <objects>
+                <viewController id="IQf-Zq-VXN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="baN-UT-gCb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Saved" id="6C4-Ny-LKA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ltt-W3-SNh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1471" y="1018"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FXF-Nu-Bun">

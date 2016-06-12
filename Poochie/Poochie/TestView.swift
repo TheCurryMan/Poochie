@@ -11,6 +11,7 @@ import UIKit
 import EPDeckView
 import Font_Awesome_Swift
 
+
 class TestView: EPCardView {
     
     @IBOutlet weak var view: UIView!
@@ -52,7 +53,7 @@ class TestView: EPCardView {
         self.checkButton.setFAIcon(FAType.FAHeart, iconSize: 60, forState: UIControlState.Normal)
         self.checkButton.setFATitleColor(UIColor.redColor())
         
-        self.cancelButton.setFAIcon(FAType.FACheck, iconSize: 60, forState: UIControlState.Normal)
+        self.cancelButton.setFAIcon(FAType.FATimes, iconSize: 60, forState: UIControlState.Normal)
         self.cancelButton.setFATitleColor(UIColor.redColor())
         //self.profileImageView.layer.cornerRadius = self.profileImageView.frame.size.width/2
         //self.profileImageView.layer.masksToBounds = true

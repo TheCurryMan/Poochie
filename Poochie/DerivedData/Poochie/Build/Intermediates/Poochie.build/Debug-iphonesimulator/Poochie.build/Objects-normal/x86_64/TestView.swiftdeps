@@ -8,37 +8,37 @@ provides-member:
 - ["CSo6UIView", ""]
 - ["CSo6UIView", "loadFromNibNamed"]
 provides-dynamic-lookup:
-- "activityController"
+- "Location"
+- "loadViewFromNib"
+- "displayNameLabel"
 - "profileImageView"
+- "loadFromNibNamed"
+- "checkButton"
+- "activityController"
 - "Price"
 - "cancelButton"
 - "xibSetup"
 - "view"
-- "Location"
-- "loadViewFromNib"
-- "displayNameLabel"
-- "loadFromNibNamed"
-- "checkButton"
 depends-top-level:
+- "CGRect"
+- "UIView"
+- "String"
+- "UILabel"
+- !private "UIColor"
+- "NSCoder"
 - "UIImageView"
+- "NSBundle"
+- !private "StringLiteralType"
+- !private "Array"
 - "TestView"
+- !private "print"
+- "EPCardView"
 - !private "UIControlState"
 - "UIButton"
 - "UIActivityIndicatorView"
 - !private "UINib"
 - !private "UIViewAutoresizing"
-- "UIView"
-- !private "StringLiteralType"
 - !private "FAType"
-- "CGRect"
-- !private "Array"
-- "String"
-- "UILabel"
-- !private "UIColor"
-- "NSCoder"
-- "EPCardView"
-- "NSBundle"
-- !private "print"
 depends-member:
 - !private ["Ps9AnyObject", "FAType"]
 - ["Ps9AnyObject", "Location"]
@@ -200,8 +200,8 @@ depends-member:
 - ["C10EPDeckView10EPCardView", "xibSetup"]
 - ["C10EPDeckView10EPCardView", ""]
 - !private ["Ps9Equatable", "Element"]
-- !private ["Ps9Equatable", "FACheck"]
 - !private ["Ps9Equatable", "FAHeart"]
+- !private ["Ps9Equatable", "FATimes"]
 - !private ["Ps9Equatable", "FAType"]
 - !private ["Ps9Equatable", "FlexibleHeight"]
 - !private ["Ps9Equatable", "FlexibleWidth"]
@@ -233,11 +233,11 @@ depends-member:
 - ["Ps9Equatable", "view"]
 - ["Ps9Equatable", "xibSetup"]
 - ["Ps9Equatable", ""]
-- !private ["O18Font_Awesome_Swift6FAType", "FACheck"]
 - !private ["O18Font_Awesome_Swift6FAType", "FAHeart"]
+- !private ["O18Font_Awesome_Swift6FAType", "FATimes"]
 - !private ["Ps13GeneratorType", "Element"]
-- !private ["Ps8Hashable", "FACheck"]
 - !private ["Ps8Hashable", "FAHeart"]
+- !private ["Ps8Hashable", "FATimes"]
 - !private ["Ps8Hashable", "FAType"]
 - ["Ps8Hashable", "Location"]
 - !private ["Ps8Hashable", "NSBundle"]
@@ -377,8 +377,8 @@ depends-member:
 - !private ["Ps30RangeReplaceableCollectionType", "Index"]
 - !private ["Ps30RangeReplaceableCollectionType", "subscript"]
 - !private ["Ps16RawRepresentable", "Element"]
-- !private ["Ps16RawRepresentable", "FACheck"]
 - !private ["Ps16RawRepresentable", "FAHeart"]
+- !private ["Ps16RawRepresentable", "FATimes"]
 - !private ["Ps16RawRepresentable", "FlexibleHeight"]
 - !private ["Ps16RawRepresentable", "FlexibleWidth"]
 - !private ["Ps16RawRepresentable", "Normal"]

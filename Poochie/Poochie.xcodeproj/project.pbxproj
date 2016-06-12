@@ -23,6 +23,7 @@
 		E1E4A6A21D0CEB0100D88867 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1E4A6A11D0CEB0100D88867 /* GoogleService-Info.plist */; };
 		E1E4A6A41D0CEEF400D88867 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1E4A6A31D0CEEF400D88867 /* Main.storyboard */; };
 		E1E4A6A61D0CF0CD00D88867 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E4A6A51D0CF0CD00D88867 /* LogInViewController.swift */; };
+		E1E4A6A81D0D983200D88867 /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E4A6A71D0D983200D88867 /* SavedViewController.swift */; };
 		E2F234A666876E6F04B6FB07 /* Pods_PoochieUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 997C6E040DD77A0AB0982C85 /* Pods_PoochieUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		E1E4A6A11D0CEB0100D88867 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E1E4A6A31D0CEEF400D88867 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E1E4A6A51D0CF0CD00D88867 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		E1E4A6A71D0D983200D88867 /* SavedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
 		EE0C2DAB7771D4649AE1A94B /* Pods-PoochieTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoochieTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PoochieTests/Pods-PoochieTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,6 +156,7 @@
 				E16C14A01D0CBEC4009444FA /* LaunchScreen.storyboard */,
 				E16C14A31D0CBEC4009444FA /* Info.plist */,
 				E1E4A6A11D0CEB0100D88867 /* GoogleService-Info.plist */,
+				E1E4A6A71D0D983200D88867 /* SavedViewController.swift */,
 			);
 			path = Poochie;
 			sourceTree = "<group>";
@@ -584,6 +587,7 @@
 				E1E4A6A01D0CD05700D88867 /* SignUpViewController.swift in Sources */,
 				E16C149A1D0CBEC4009444FA /* ViewController.swift in Sources */,
 				E16C14981D0CBEC4009444FA /* AppDelegate.swift in Sources */,
+				E1E4A6A81D0D983200D88867 /* SavedViewController.swift in Sources */,
 				36F4BAC31D0D269E0097DDD8 /* TinderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

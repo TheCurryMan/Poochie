@@ -68,7 +68,7 @@ class SignUpViewController: UIViewController {
                 else {
                     print("User signed in!")
                     
-                    self.ref.child("data/users").updateChildValues(["\(FIRAuth.auth()!.currentUser!.uid)":["Username":self.username.text!]])
+                    self.ref.child("users").updateChildValues(["\(FIRAuth.auth()!.currentUser!.uid)":["totalitems":0]])
                     
                     self.performSegueWithIdentifier("home", sender: self)
                 }
