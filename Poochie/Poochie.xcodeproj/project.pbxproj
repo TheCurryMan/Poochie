@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		36572B4C1D0CC79900B8B134 /* imgres.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 36572B4B1D0CC79900B8B134 /* imgres.jpg */; };
+		36B466B41D0CF7AC00E47697 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B466B31D0CF7AC00E47697 /* Item.swift */; };
+		36F4BABD1D0D26940097DDD8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36F4BABC1D0D26940097DDD8 /* Images.xcassets */; };
+		36F4BAC11D0D269E0097DDD8 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F4BABE1D0D269E0097DDD8 /* TestView.swift */; };
+		36F4BAC21D0D269E0097DDD8 /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36F4BABF1D0D269E0097DDD8 /* TestView.xib */; };
+		36F4BAC31D0D269E0097DDD8 /* TinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F4BAC01D0D269E0097DDD8 /* TinderViewController.swift */; };
 		76A7B5D715A0AC78C7DB9EE4 /* Pods_PoochieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05FA8306FF783440335D5074 /* Pods_PoochieTests.framework */; };
 		96F3618E26A4138EBA12B96F /* Pods_Poochie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76E2CE0535382BE6DCA0AC86 /* Pods_Poochie.framework */; };
 		E16C14981D0CBEC4009444FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16C14971D0CBEC4009444FA /* AppDelegate.swift */; };
 		E16C149A1D0CBEC4009444FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16C14991D0CBEC4009444FA /* ViewController.swift */; };
-		E16C149F1D0CBEC4009444FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E16C149E1D0CBEC4009444FA /* Assets.xcassets */; };
 		E16C14A21D0CBEC4009444FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E16C14A01D0CBEC4009444FA /* LaunchScreen.storyboard */; };
 		E16C14AD1D0CBEC4009444FA /* PoochieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16C14AC1D0CBEC4009444FA /* PoochieTests.swift */; };
 		E16C14B81D0CBEC4009444FA /* PoochieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16C14B71D0CBEC4009444FA /* PoochieUITests.swift */; };
@@ -43,7 +46,11 @@
 /* Begin PBXFileReference section */
 		05FA8306FF783440335D5074 /* Pods_PoochieTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoochieTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C3B9B80AB9BB36641BD5481 /* Pods-Poochie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Poochie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Poochie/Pods-Poochie.debug.xcconfig"; sourceTree = "<group>"; };
-		36572B4B1D0CC79900B8B134 /* imgres.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = imgres.jpg; path = Images/imgres.jpg; sourceTree = "<group>"; };
+		36B466B31D0CF7AC00E47697 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		36F4BABC1D0D26940097DDD8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		36F4BABE1D0D269E0097DDD8 /* TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		36F4BABF1D0D269E0097DDD8 /* TestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestView.xib; sourceTree = "<group>"; };
+		36F4BAC01D0D269E0097DDD8 /* TinderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderViewController.swift; sourceTree = "<group>"; };
 		76E2CE0535382BE6DCA0AC86 /* Pods_Poochie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Poochie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		895DDF6F11E489749A38613C /* Pods-PoochieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoochieTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PoochieTests/Pods-PoochieTests.debug.xcconfig"; sourceTree = "<group>"; };
 		997C6E040DD77A0AB0982C85 /* Pods_PoochieUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoochieUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,7 +60,6 @@
 		E16C14941D0CBEC4009444FA /* Poochie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Poochie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E16C14971D0CBEC4009444FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E16C14991D0CBEC4009444FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E16C149E1D0CBEC4009444FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E16C14A11D0CBEC4009444FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E16C14A31D0CBEC4009444FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E16C14A81D0CBEC4009444FA /* PoochieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoochieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,9 +145,12 @@
 				E1E4A6A51D0CF0CD00D88867 /* LogInViewController.swift */,
 				E16C14971D0CBEC4009444FA /* AppDelegate.swift */,
 				E16C14991D0CBEC4009444FA /* ViewController.swift */,
-				E16C149E1D0CBEC4009444FA /* Assets.xcassets */,
-				36572B4B1D0CC79900B8B134 /* imgres.jpg */,
+				36F4BABE1D0D269E0097DDD8 /* TestView.swift */,
+				36F4BABF1D0D269E0097DDD8 /* TestView.xib */,
+				36F4BAC01D0D269E0097DDD8 /* TinderViewController.swift */,
+				36F4BABC1D0D26940097DDD8 /* Images.xcassets */,
 				E1E4A6A31D0CEEF400D88867 /* Main.storyboard */,
+				36B466B31D0CF7AC00E47697 /* Item.swift */,
 				E16C14A01D0CBEC4009444FA /* LaunchScreen.storyboard */,
 				E16C14A31D0CBEC4009444FA /* Info.plist */,
 				E1E4A6A11D0CEB0100D88867 /* GoogleService-Info.plist */,
@@ -184,12 +193,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E16C14BC1D0CBEC4009444FA /* Build configuration list for PBXNativeTarget "Poochie" */;
 			buildPhases = (
+				4525B2B39F2BB207A32A26AD /* 📦 Check Pods Manifest.lock */,
 				1348B4804C1F54AD9A635FA7 /* [CP] Check Pods Manifest.lock */,
 				E16C14901D0CBEC4009444FA /* Sources */,
 				E16C14911D0CBEC4009444FA /* Frameworks */,
 				E16C14921D0CBEC4009444FA /* Resources */,
 				5A4820BEF268594E9D33C6E0 /* [CP] Embed Pods Frameworks */,
 				F7EBAD85766CD7ABCFD76F89 /* [CP] Copy Pods Resources */,
+				8D43B1D7ACD200393CAD4F26 /* 📦 Embed Pods Frameworks */,
+				18F4C02A9373617CC9563C77 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -204,12 +216,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E16C14BF1D0CBEC4009444FA /* Build configuration list for PBXNativeTarget "PoochieTests" */;
 			buildPhases = (
+				69238856E2E2F039F4F48A5E /* 📦 Check Pods Manifest.lock */,
 				3E8E51B7447A66F6B0636055 /* [CP] Check Pods Manifest.lock */,
 				E16C14A41D0CBEC4009444FA /* Sources */,
 				E16C14A51D0CBEC4009444FA /* Frameworks */,
 				E16C14A61D0CBEC4009444FA /* Resources */,
 				AB89A3C7411E07C352C93588 /* [CP] Embed Pods Frameworks */,
 				D8B1F819375A8E8A01422C3E /* [CP] Copy Pods Resources */,
+				0BD4A599A718D9A789357A63 /* 📦 Embed Pods Frameworks */,
+				B10E0E8AEEC8CA62947B83EF /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -225,11 +240,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E16C14C21D0CBEC4009444FA /* Build configuration list for PBXNativeTarget "PoochieUITests" */;
 			buildPhases = (
+				1D5782AE3C16E83C46BE248A /* 📦 Check Pods Manifest.lock */,
 				9BA5B5E16473B25D043BEC7B /* [CP] Check Pods Manifest.lock */,
 				E16C14AF1D0CBEC4009444FA /* Sources */,
 				E16C14B01D0CBEC4009444FA /* Frameworks */,
 				E16C14B11D0CBEC4009444FA /* Resources */,
 				13F564B9AFCD2BF94F525946 /* [CP] Copy Pods Resources */,
+				FFE1312E48CA14AF1275D7B9 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -289,11 +306,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36572B4C1D0CC79900B8B134 /* imgres.jpg in Resources */,
+				36F4BAC21D0D269E0097DDD8 /* TestView.xib in Resources */,
 				E1E4A6A21D0CEB0100D88867 /* GoogleService-Info.plist in Resources */,
+				36F4BABD1D0D26940097DDD8 /* Images.xcassets in Resources */,
 				E16C14A21D0CBEC4009444FA /* LaunchScreen.storyboard in Resources */,
 				E1E4A6A41D0CEEF400D88867 /* Main.storyboard in Resources */,
-				E16C149F1D0CBEC4009444FA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +331,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0BD4A599A718D9A789357A63 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PoochieTests/Pods-PoochieTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		1348B4804C1F54AD9A635FA7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -344,6 +376,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PoochieUITests/Pods-PoochieUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		18F4C02A9373617CC9563C77 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Poochie/Pods-Poochie-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D5782AE3C16E83C46BE248A /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		3E8E51B7447A66F6B0636055 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -359,6 +421,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		4525B2B39F2BB207A32A26AD /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		5A4820BEF268594E9D33C6E0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -367,6 +444,36 @@
 			inputPaths = (
 			);
 			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Poochie/Pods-Poochie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69238856E2E2F039F4F48A5E /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8D43B1D7ACD200393CAD4F26 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,6 +511,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PoochieTests/Pods-PoochieTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B10E0E8AEEC8CA62947B83EF /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PoochieTests/Pods-PoochieTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D8B1F819375A8E8A01422C3E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -434,6 +556,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Poochie/Pods-Poochie-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FFE1312E48CA14AF1275D7B9 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PoochieUITests/Pods-PoochieUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -441,10 +578,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36F4BAC11D0D269E0097DDD8 /* TestView.swift in Sources */,
+				36B466B41D0CF7AC00E47697 /* Item.swift in Sources */,
 				E1E4A6A61D0CF0CD00D88867 /* LogInViewController.swift in Sources */,
 				E1E4A6A01D0CD05700D88867 /* SignUpViewController.swift in Sources */,
 				E16C149A1D0CBEC4009444FA /* ViewController.swift in Sources */,
 				E16C14981D0CBEC4009444FA /* AppDelegate.swift in Sources */,
+				36F4BAC31D0D269E0097DDD8 /* TinderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

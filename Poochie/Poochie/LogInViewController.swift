@@ -39,7 +39,7 @@ class LoginViewController: UIViewController {
                 }
                 else {
                     print("User logged in")
-                    self.performSegueWithIdentifier("goingHome", sender: self)
+                    self.performSegueWithIdentifier("goingToTinderView", sender: self)
                 }}
         } else {
             print("email/password can't be empty")

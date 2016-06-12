@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="tQF-0h-UzR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="tQF-0h-UzR">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -87,7 +87,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="w0g-yB-Pg3" kind="push" id="dBB-Qv-6aA"/>
+                                    <segue destination="w0g-yB-Pg3" kind="modal" identifier="home" id="dBB-Qv-6aA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -98,7 +98,6 @@
                         <outlet property="email" destination="GZN-ba-nTE" id="Sdz-gJ-Kav"/>
                         <outlet property="password" destination="Xza-kn-P48" id="3E9-rZ-iqw"/>
                         <outlet property="username" destination="sil-B8-hOk" id="UeK-Eu-6IU"/>
-                        <segue destination="36K-2c-4jY" kind="push" identifier="home" id="amc-ei-jrm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IKR-nT-6Xb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -165,36 +164,12 @@
                     <connections>
                         <outlet property="email" destination="s86-BB-JkE" id="W6Z-vS-RP5"/>
                         <outlet property="password" destination="8o4-7J-OTf" id="04P-wJ-F4A"/>
-                        <segue destination="36K-2c-4jY" kind="push" identifier="goingHome" id="KPU-3j-cdn"/>
+                        <segue destination="vTO-E0-WTu" kind="modal" identifier="goingToTinderView" id="pNf-wO-fMJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ajo-K8-XQ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1084" y="241"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="2lr-f1-DhN">
-            <objects>
-                <viewController id="36K-2c-4jY" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="2xp-qv-jYe">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ben Do whatever you want now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uIK-49-C1o">
-                                <rect key="frame" x="40" y="20" width="240" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="5Df-83-78W"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Lrw-7f-nw1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1468" y="241"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UkU-si-S6y">
@@ -232,28 +207,79 @@
             </objects>
             <point key="canvasLocation" x="1084" y="-471"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="6Tv-hN-Y6f">
+        <!--Tinder View Controller-->
+        <scene sceneID="WOR-IS-l6J">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FJA-qZ-ZH3" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="KWh-hG-P4N"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EVw-wP-aK9">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
+                <viewController id="vTO-E0-WTu" customClass="TinderViewController" customModule="Poochie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bJh-8w-x0t">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="DRN-3S-IbL" customClass="EPDeckView" customModule="EPDeckView">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sTT-9g-uZc">
+                                        <rect key="frame" x="8" y="502" width="78" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Throw left">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="throwLeftButtonTapped:" destination="vTO-E0-WTu" eventType="touchUpInside" id="fsP-Tj-BEQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zmF-eG-2s5">
+                                        <rect key="frame" x="212" y="0.0" width="100" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Reload cards">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="reloadCardsButtonTapped:" destination="vTO-E0-WTu" eventType="touchUpInside" id="Xcc-nH-F9l"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="suo-tt-WvB">
+                                        <rect key="frame" x="8" y="0.0" width="105" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Previous card">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="previousCardButtonTapped:" destination="vTO-E0-WTu" eventType="touchUpInside" id="okF-jw-iJP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iWo-md-S8t">
+                                        <rect key="frame" x="224" y="502" width="88" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Throw right">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="throwRightButtonTapped:" destination="vTO-E0-WTu" eventType="touchUpInside" id="Vbg-1o-6xl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.35294117650000001" green="0.71764705880000002" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8G5-hI-b8n"/>
                     <connections>
-                        <segue destination="36K-2c-4jY" kind="relationship" relationship="rootViewController" id="clr-sh-Oz2"/>
+                        <outlet property="deckView" destination="DRN-3S-IbL" id="vZQ-Q6-Qei"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kgT-ag-iyA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nmm-kb-hGR" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1468" y="-471"/>
+            <point key="canvasLocation" x="1084" y="980"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="dBB-Qv-6aA"/>
-        <segue reference="KPU-3j-cdn"/>
     </inferredMetricsTieBreakers>
 </document>

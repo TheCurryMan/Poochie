@@ -6,6 +6,7 @@ target 'Poochie' do
 pod 'Firebase'
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
+pod 'EPDeckView'
 end
 
 target 'PoochieTests' do

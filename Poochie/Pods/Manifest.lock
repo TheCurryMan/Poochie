@@ -1,4 +1,5 @@
 PODS:
+  - EPDeckView (0.1.2)
   - Firebase (3.2.1):
     - Firebase/Core (= 3.2.1)
   - Firebase/Analytics (3.2.1):
@@ -32,11 +33,13 @@ PODS:
     - GoogleSymbolUtilities (~> 1.0)
 
 DEPENDENCIES:
+  - EPDeckView
   - Firebase
   - Firebase/Auth
   - Firebase/Database
 
 SPEC CHECKSUMS:
+  EPDeckView: af28312049755fffe031405fe3edf55b8425b73f
   Firebase: 6c80ac28d59d06bfd9152a7b6ea17625ca93183d
   FirebaseAnalytics: 6f75b04e6bfb8e0b6e9ef298e04c24eea3b13863
   FirebaseAuth: 94b851fc345ce98036dfedfdc2eddeaef8fa3b4c
@@ -47,6 +50,6 @@ SPEC CHECKSUMS:
   GoogleSymbolUtilities: 33117db1b5f290c6fbf259585e4885b4c84b98d7
   GoogleUtilities: 56c5ac05b7aa5dc417a1bb85221a9516e04d7032
 
-PODFILE CHECKSUM: 19ad7d71bb0edb922fa3777d1355bd4f0450963e
+PODFILE CHECKSUM: 4240a0bd901423cabcf795bcdf790600d05f95e1
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.0.0
