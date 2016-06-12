@@ -38,8 +38,12 @@ class SignUpViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         
+        //try! FIRAuth.auth()!.signOut()
+
+        
         if let user = FIRAuth.auth()?.currentUser {
             print("User signed in")
+            
             self.performSegueWithIdentifier("home", sender: self)
             // User is signed in.
         } else {

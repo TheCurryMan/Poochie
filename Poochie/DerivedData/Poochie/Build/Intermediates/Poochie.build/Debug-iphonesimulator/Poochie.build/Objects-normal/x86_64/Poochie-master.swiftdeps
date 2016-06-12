@@ -1,7 +1,8 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
 options: "94e152734a70ae5aea339d1aed313493"
-build_time: [519001720, 914989000]
+build_time: [519010634, 54202000]
 inputs:
-  "/Users/Avinash/Documents/Code/Poochie/Poochie/Poochie/SignUpViewController.swift": [519001718, 0]
+  "/Users/Avinash/Documents/Code/Poochie/Poochie/Poochie/LogInViewController.swift": [519009805, 0]
+  "/Users/Avinash/Documents/Code/Poochie/Poochie/Poochie/SignUpViewController.swift": [519010632, 0]
   "/Users/Avinash/Documents/Code/Poochie/Poochie/Poochie/ViewController.swift": [519000018, 0]
-  "/Users/Avinash/Documents/Code/Poochie/Poochie/Poochie/AppDelegate.swift": [519000018, 0]
+  "/Users/Avinash/Documents/Code/Poochie/Poochie/Poochie/AppDelegate.swift": [519008292, 0]
